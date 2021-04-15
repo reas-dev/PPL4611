@@ -12,7 +12,7 @@ A11.2018.10853 - Nathaniel Kevin Santoso : Project Charter, Diagram
 
 A11.2018.10882 - Nathanael Fredericko Wibawanto : Project Charter, Project  Scope Statement, Diagram
 
-A11.2018.10888 - Andreas Yulianto : Project  Scope Statement, UI Mockup
+A11.2018.10888 - Andreas Yulianto : Project  Scope Statement, User Interface, Mockup
 
 A11.2018.10990 - Freddy Haryono : Project  Scope Statement, WBS, Diagram
 
