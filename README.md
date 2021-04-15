@@ -18,9 +18,13 @@ A11.2018.10990 - Freddy Haryono : Project  Scope Statement, WBS, Diagram
 
 ## Contributor
 A11.2018.10847 - Favian Aldo Hermawan : Project Manager
+
 A11.2018.10853 - Nathaniel Kevin Santoso : UI/UX Designer
+
 A11.2018.10882 - Nathanael Fredericko Wibawanto : Front-End Programmer
+
 A11.2018.10888 - Andreas Yulianto : Back-End Programmer
+
 A11.2018.10990 - Freddy Haryono : Business & System Analyst
 
 ## License
