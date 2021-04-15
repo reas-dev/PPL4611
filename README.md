@@ -23,7 +23,7 @@ A11.2018.10853 - Nathaniel Kevin Santoso : UI/UX Designer
 
 A11.2018.10882 - Nathanael Fredericko Wibawanto : Front-End Programmer
 
-A11.2018.10888 - Andreas Yulianto : Back-End Programmer
+A11.2018.10888 - Andreas Yulianto : Back-End Programmer, UI/UX Designer
 
 A11.2018.10990 - Freddy Haryono : Business & System Analyst
 
