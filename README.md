@@ -1,6 +1,9 @@
 # Game Board Catalogue
 Game Board Catalogue adalah suatu aplikasi untuk merekam info penting, menyediakan katalog sekaligus leaderboard dan memanajemen sesi bermain bersama atau yang disebut play day. Aplikasi ini dapat memudahkan komunitas dan para pemain board game di Semarang untuk memilih game, menentukan jadwal, dan bermain bersama. Secara detail, pada sesi play day, semua data akan terekam, termasuk: siapa yang bermain pada suatu playday, waktu bermain, skor masing-masing pemain tersebut yang mana secara otomatis juga akan masuk ke dalam leaderboard.
 
+## Team Name - Group
+Tim Pengembang Board Game Catalogue - Kelompok 9
+
 ## Install
 
 ## Usage
