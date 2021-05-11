@@ -1,0 +1,18 @@
+.form-control {
+    border-radius: 0.5rem;
+}
+
+.class {
+    color: black;
+}
+
+/* input#email {
+    background-image: url(fa-eye-slash); 
+    background-repeat: no-repeat; 
+    background-position: 0px 0px; 
+    padding-left: 16px; 
+} */
+
+#batas {
+    height: 4.200rem;
+}
