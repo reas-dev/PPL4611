@@ -12,7 +12,7 @@
   <title>User - Profil</title>
 
   <!-- Custom styles for this template-->
-  <link rel="stylesheet" href="assets/css/bootstrap.css"> 
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -25,29 +25,29 @@
     <!-- Sidebar -->
     <!-- <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar"> -->
 
-      <!-- Sidebar - Brand -->
-      <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
+    <!-- Sidebar - Brand -->
+    <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
         <div class="sidebar-brand-text mx-3">User</div>
       </a> -->
 
-      <!-- Divider -->
-      <!-- <hr class="sidebar-divider my-0"> -->
+    <!-- Divider -->
+    <!-- <hr class="sidebar-divider my-0"> -->
 
-      <!-- Nav Item - Dashboard -->
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="<?php echo base_url()."index.php/dashboarduser/"; ?>">
+    <!-- Nav Item - Dashboard -->
+    <!-- <li class="nav-item active">
+        <a class="nav-link" href="<?php echo base_url() . "index.php/dashboarduser/"; ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li> -->
 
-      <!-- Divider -->
-      <!-- <hr class="sidebar-divider"> -->
+    <!-- Divider -->
+    <!-- <hr class="sidebar-divider"> -->
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!-- <li class="nav-item">
+    <!-- Nav Item - Pages Collapse Menu -->
+    <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>List Lagu</span>
@@ -55,25 +55,25 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Artis : </h6>
-            <a class="collapse-item" href="<?php echo base_url()."index.php/dashboarduser/ariana_grande/".$this->session->userdata('id_user'); ?>">Ariana Grande</a>
-            <a class="collapse-item" href="<?php echo base_url()."index.php/dashboarduser/bruno_mars/".$this->session->userdata('id_user'); ?>">Bruno Mars</a>
-            <a class="collapse-item" href="<?php echo base_url()."index.php/dashboarduser/ed_sheeran/".$this->session->userdata('id_user'); ?>">Ed Sheeran</a>
+            <a class="collapse-item" href="<?php echo base_url() . "index.php/dashboarduser/ariana_grande/" . $this->session->userdata('id_user'); ?>">Ariana Grande</a>
+            <a class="collapse-item" href="<?php echo base_url() . "index.php/dashboarduser/bruno_mars/" . $this->session->userdata('id_user'); ?>">Bruno Mars</a>
+            <a class="collapse-item" href="<?php echo base_url() . "index.php/dashboarduser/ed_sheeran/" . $this->session->userdata('id_user'); ?>">Ed Sheeran</a>
           </div>
         </div>
       </li> -->
 
-      <!-- Nav Item - Charts -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()."index.php/dashboarduser/pesan_lagu/".$this->session->userdata('id_user'); ?>">
+    <!-- Nav Item - Charts -->
+    <!-- <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url() . "index.php/dashboarduser/pesan_lagu/" . $this->session->userdata('id_user'); ?>">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Pesan Lagu</span></a>
       </li> -->
 
-      <!-- Divider -->
-      <!-- <hr class="sidebar-divider d-none d-md-block"> -->
+    <!-- Divider -->
+    <!-- <hr class="sidebar-divider d-none d-md-block"> -->
 
-      <!-- Sidebar Toggler (Sidebar) -->
-      <!-- <div class="text-center d-none d-md-inline">
+    <!-- Sidebar Toggler (Sidebar) -->
+    <!-- <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
@@ -96,11 +96,11 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav mr-auto">
-            
+
             <!-- Nav Item - Menu Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile" src="<?php echo base_url().$this->session->userdata ('foto');?>"> 
+                <img class="img-profile" src="<?php echo base_url() . $this->session->userdata('foto'); ?>">
                 <!-- kasih gambar menu -->
                 <i class="fas fa-menu fa-sm fa-fw mr-2"></i>
               </a>
@@ -137,16 +137,16 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-            
+
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $this->session->userdata ('username');?></span>
-                <img class="img-profile rounded-circle" src="<?php echo base_url().$this->session->userdata ('foto');?>">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $this->session->userdata('username'); ?></span>
+                <img class="img-profile rounded-circle" src="<?php echo base_url() . $this->session->userdata('foto'); ?>">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="<?php echo base_url()."index.php/dashboarduser/profil/".$this->session->userdata('id_user'); ?>">
+                <a class="dropdown-item" href="<?php echo base_url() . "index.php/dashboarduser/profil/" . $this->session->userdata('id_user'); ?>">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Profil
                 </a>
@@ -182,21 +182,21 @@
                   <h6 class="m-0 font-weight-bold text-primary">Update/ Lihat Profil</h6>
                 </div>
                 <div class="card-body">
-                    <form action="<?php echo base_url()."index.php/dashboarduser/proses_edit_profil/".$this->session->userdata('id_user');?>" method="POST" enctype="multipart/form-data">
-                        <input type="hidden" name="id_user" class="form-control form-control-user" value="<?php echo $id_user; ?>">
-                        Username : <br>
-                        <input type="text" name="username" class="form-control form-control-user" value="<?php echo $username; ?>"><br><br>
-                        Email : <br>
-                        <?php echo $email; ?><br><br>
-                        Phone : <br>
-                        <input type="text" name="phone" class="form-control form-control-user" value="<?php echo $phone; ?>"><br><br>
-                        Foto : <br>
-                        <img src="<?php echo base_url().$image; ?>"><br><br>
-                        <input class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" type="file" name="foto"><br><br>
-                        Address : <br>
-                        <input type="text" name="address" class="form-control form-control-user" value="<?php echo $address; ?>"><br><br>
-                        <input type="submit" value="Update">
-                    </form>
+                  <form action="<?php echo base_url() . "index.php/dashboarduser/proses_edit_profil/" . $this->session->userdata('id_user'); ?>" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="id_user" class="form-control form-control-user" value="<?php echo $id_user; ?>">
+                    Username : <br>
+                    <input type="text" name="username" class="form-control form-control-user" value="<?php echo $username; ?>"><br><br>
+                    Email : <br>
+                    <?php echo $email; ?><br><br>
+                    Phone : <br>
+                    <input type="text" name="phone" class="form-control form-control-user" value="<?php echo $phone; ?>"><br><br>
+                    Foto : <br>
+                    <img src="<?php echo base_url() . $image; ?>"><br><br>
+                    <input class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" type="file" name="foto"><br><br>
+                    Address : <br>
+                    <input type="text" name="address" class="form-control form-control-user" value="<?php echo $address; ?>"><br><br>
+                    <input type="submit" value="Update">
+                  </form>
                 </div>
               </div>
 
@@ -243,16 +243,16 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="<?php echo base_url()."index.php/dashboarduser/logout"; ?>">Logout</a>
+          <a class="btn btn-primary" href="<?php echo base_url() . "index.php/dashboarduser/logout"; ?>">Logout</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="assets/js/jquery.js"></script> 
-	<script src="assets/js/popper.js"></script> 
-	<script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
 
 </body>
 

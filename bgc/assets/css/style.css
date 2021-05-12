@@ -1,20 +1,25 @@
+.main-dark {
+  color: #181829 !important;
+  background-color: #181829 !important;
+}
+
 .card {
-    background-color: #343a40 !important;
-    font-weight: bold;
+  background-color: #343a40 !important;
+  font-weight: bold;
 }
 .form-control {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .small {
-    color: #FFF;
+  color: #fff;
 }
 .h4.text-gray-900 {
-    color: #FFF;
+  color: #fff;
 }
 
 a#color {
-    color: #FFF;
+  color: #fff;
 }
 
 /* input#email {
@@ -25,12 +30,12 @@ a#color {
 } */
 
 #batas {
-    height: 4.200rem;
+  height: 4.2rem;
 }
 
-.dropdown-item.active, 
+.dropdown-item.active,
 .dropdown-item:active {
-    color: #000;
-    text-decoration: none;
-    background-color: #dbdbdb;
+  color: #000;
+  text-decoration: none;
+  background-color: #dbdbdb;
 }
