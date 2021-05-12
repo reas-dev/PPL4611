@@ -1,3 +1,4 @@
 <div>
-    {{-- Close your eyes. Count to one. That is how long forever feels. --}}
+    <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+    Tes
 </div>

@@ -17,7 +17,7 @@ class CreateGamesTable extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->string('name');
-            $table->string('icon');
+            $table->string('image');
             $table->longText('description')->nullable()->default('Game Description');
             $table->timestamps();
             $table->softDeletes();
