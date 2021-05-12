@@ -16,17 +16,15 @@ class CreateTeamSchedulesTable extends Migration
         Schema::create('team_schedules', function (Blueprint $table) {
             $table->id();
             $table->string('code')->unique();
-            $table->string('member_code_1')->unique();
-            $table->string('member_code_2')->unique();
+            $table->string('member_code_1');
+            $table->string('member_code_2');
             $table->string('status')->nullable();
             $table->dateTimeTz('fight_at');
             $table->timestamps();
             $table->softDeletes();
 
-            // $table->unsignedBigInteger('member_code_1')->unique();
-            // $table->foreign('member_code_1')->references('code')->on('team_memberships');
-            // $table->unsignedBigInteger('member_code_2')->unique();
-            // $table->foreign('member_code_2')->references('code')->on('team_memberships');
+            $table->foreign('member_code_1')->references('code')->on('team_memberships');
+            $table->foreign('member_code_2')->references('code')->on('team_memberships');
         });
     }
 
