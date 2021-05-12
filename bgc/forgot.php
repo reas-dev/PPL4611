@@ -26,7 +26,7 @@
 
       <div class="col-xl-8 col-lg-12 col-md-4">
 
-        <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card o-hidden border-0 my-5">
           
           <!-- Card -->
           <div class="card-body">
@@ -55,8 +55,8 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small">Already have account?</a>
-                    <a class="small" style="color: blue;" href="#">Sign In</a>
+                    <a class="small" id="color">Already have account?</a>
+                    <a class="small" style="color: #0069d9;" href="#">Sign In</a>
                   </div>
                 </div>
               </div>

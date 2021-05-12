@@ -1,9 +1,20 @@
+.card {
+    background-color: #343a40 !important;
+    font-weight: bold;
+}
 .form-control {
     border-radius: 0.5rem;
 }
 
-.class {
-    color: black;
+.small {
+    color: #FFF;
+}
+.h4.text-gray-900 {
+    color: #FFF;
+}
+
+a#color {
+    color: #FFF;
 }
 
 /* input#email {
@@ -15,4 +26,11 @@
 
 #batas {
     height: 4.200rem;
+}
+
+.dropdown-item.active, 
+.dropdown-item:active {
+    color: #000;
+    text-decoration: none;
+    background-color: #dbdbdb;
 }
