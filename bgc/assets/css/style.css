@@ -1,25 +1,126 @@
-.main-dark {
-  color: #181829 !important;
-  background-color: #181829 !important;
+#card-body {
+    background-color: #5a5c69 !important;
+}
+
+#card-header {
+    background-color: #5a5c69 !important;
 }
 
 .card {
-  background-color: #343a40 !important;
-  font-weight: bold;
+    background-color: #343a40 !important;
+    font-weight: bold;
 }
+
+.card.shadow.mb-4 {
+    border: 3px solid #e3e6f0;
+}
+
 .form-control {
-  border-radius: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .small {
-  color: #fff;
+    color: #FFF;
 }
+
 .h4.text-gray-900 {
-  color: #fff;
+    color: #FFF;
 }
 
 a#color {
-  color: #fff;
+    color: #FFF;
+}
+
+#home {
+    color: #FFF !important;;
+}
+
+span#color {
+    color: #FFF;
+}
+
+#icon {
+    color: #FFF;
+}
+
+#coloring {
+    color: #FFF;
+    font-weight: bold;
+}
+
+#coloring1 {
+    color: #FFF;
+}
+
+#coloring2 {
+    color: rgba(255, 255, 255, 0.788);
+}
+
+#drop {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto;
+}
+
+.container-buttons {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.buttons-4 {
+    width: 100px;
+    border: blue;
+}
+
+.btn-warning:not(:disabled):not(.disabled).active {
+    color: #000;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active {
+    color: #000;
+}
+
+#card1 {
+    border: 0px;
+}
+
+#card-header1 {
+    background-color: #5a5c69 !important;
+    border-bottom: 0px;
+}
+
+.shadow1 {
+    box-shadow: 0.45rem 0.35rem 0 rgba(58,59,69,.15) !important;
+}
+
+#icon1 {
+    color: #FFF;
+    min-height: 128px;
+    min-width: 128px;
+    margin-bottom: 3rem !important;
+}
+
+#card2 {
+    border: 0px;
+    border-radius: 50% !important;
+    max-height: 128px;
+    max-width: 128px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#card-header2 {
+    background-color: #5a5c69 !important;
+    border-bottom: 0px;
+    border-radius: 50% !important;
+    min-height: 128px;
+    min-width: 128px;
+}
+
+.buttons-41 {
+    width: 120px;
+    border: blue;
 }
 
 /* input#email {
@@ -30,12 +131,12 @@ a#color {
 } */
 
 #batas {
-  height: 4.2rem;
+    height: 4.200rem;
 }
 
-.dropdown-item.active,
+.dropdown-item.active, 
 .dropdown-item:active {
-  color: #000;
-  text-decoration: none;
-  background-color: #dbdbdb;
+    color: #000;
+    text-decoration: none;
+    background-color: #dbdbdb;
 }

@@ -12,9 +12,9 @@
   <title>Home Page</title>
 
   <!-- Custom styles for this template-->
-  <link rel="stylesheet" href="../assets/css/bootstrap.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
   <link rel="stylesheet" href="../assets/css/sb-admin-2.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -23,7 +23,7 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper">
-
+    
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -35,22 +35,22 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav mr-auto">
-
+            
             <!-- Nav Item - Menu Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="fa fa-bars fa-sm fa-fw mr-2 text-gray-400"></span>
+                <span class="fa fa-bars fa-sm fa-fw mr-2 text-gray-400"></span>  
               </a>
               <!-- Dropdown - Menu1 Information -->
               <div class="dropdown-menu dropdown-menu-left shadow animated--grow-in" aria-labelledby="menuDropdown">
-                <a class="dropdown-item" href="#" id="myteamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="dropdown-item active" href="#" id="myteamDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   My Team's
                 </a>
                 <!-- Dropdown - My Team's Information -->
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item dropright no-arrow">
-                    <div class="dropright-menu dropright-menu-right shadow animated-grow-in" aria-labelledby="myteamDropdown">
-                      <a class="dropdown-item" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropright no-arrow"> -->
+                    <div class="dropright shadow animated-grow-in" aria-labelledby="myteamDropdown">
+                      <a class="dropdown-item dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Team List
                       </a>
                       <div class="dropdown-divider"></div>
@@ -58,8 +58,8 @@
                         Schedule
                       </a>
                     </div>
-                  </li>
-                </ul>
+                  <!-- </li>
+                </ul> -->
                 <div class="dropdown-divider"></div>
                 <!-- Dropdown - Menu2 Information -->
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -73,7 +73,7 @@
           </ul>
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-
+            
             <!-- Plus Team -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" role="button">
@@ -81,7 +81,7 @@
                 <i class="fa fa-plus-circle" aria-hidden="true"></i>
               </a>
             </li>
-
+            
             <!-- Batas -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="batas">
@@ -140,7 +140,7 @@
                 <div class="card-header py-3">
                   <div class="row">
                     <div class="col-lg-1">
-                      <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                    <i class="fa fa-file-image-o" aria-hidden="true"></i>
                     </div>
                     <div class="col-lg-10 mb-2">
                       <div class="row">
@@ -158,7 +158,7 @@
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown no-arrow">
                           <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fa fa-bars fa-sm fa-fw mr-2 text-gray-400"></span>
+                            <span class="fa fa-bars fa-sm fa-fw mr-2 text-gray-400"></span>  
                             <!-- Gambar mahkota berbayar, ini cma ganti smntara -->
                             <!-- ini nanti dropdown mahkotanya -->
                           </a>
@@ -223,8 +223,8 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="../assets/js/jquery.js"></script>
-  <script src="../assets/js/popper.js"></script>
+  <script src="../assets/js/jquery.js"></script> 
+	<script src="../assets/js/popper.js"></script> 
   <script src="../assets/js/bootstrap.js"></script>
   <script src="../assets/js/sb-admin-2.min.js"></script>
 
