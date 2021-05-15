@@ -120,9 +120,10 @@
                     <div class="card-header py-3" id="card-header">
                       <div class="row">
                         <div class="col-2 col-lg-1 col-xs-1">
-                          <div class="m-2" id="icon">
-                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
-                          </div>
+                          <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png">
+                          <!-- <div class="m-2" id="icon"> -->
+                            <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
+                          <!-- </div> -->
                         </div>
                         <div class="col-7 col-lg-9 col-xs-9 mb-2">
                           <div class="row">

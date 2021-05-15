@@ -116,6 +116,7 @@ span#color {
     border-radius: 50% !important;
     min-height: 128px;
     min-width: 128px;
+    padding: 0px;
 }
 
 .buttons-41 {
@@ -123,6 +124,21 @@ span#color {
     border: blue;
 }
 
+#gambar {
+    max-width: 128px;
+    max-height: 128px;
+}
+
+#gambar-icon {
+    max-width: 28px;
+    max-height: 28px;
+}
+
+.content {
+    position: absolute;
+    width: 28px;
+    left: 100px;
+}
 /* input#email {
     background-image: url(fa-eye-slash); 
     background-repeat: no-repeat; 

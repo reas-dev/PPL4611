@@ -119,39 +119,27 @@
                   <div class="row">
                     <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
-                        <div class="card-header py-3" id="card-header2">
-                          <div class="mb-2">
-                            <img class="rounded-circle" src="" alt=""><i class="fa fa-file-image-o" aria-hidden="true" id="icon"></i>
-                          </div>
-                        </div>
+                        <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name 1</h6>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
-                        <div class="card-header py-3" id="card-header2">
-                          <div class="mb-2">
-                            <img class="rounded-circle" src="" alt=""><i class="fa fa-file-image-o" aria-hidden="true" id="icon"></i>
-                          </div>
-                        </div>
+                        <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name 2</h6>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
-                        <div class="card-header py-3" id="card-header2">
-                          <div class="mb-2">
-                            <img class="rounded-circle" src="" alt=""><i class="fa fa-file-image-o" aria-hidden="true" id="icon"></i>
-                          </div>
-                        </div>
+                        <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name 3</h6>
                         </div>
                       </div>
                     </div>
@@ -170,39 +158,27 @@
                   <div class="row">
                     <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
-                        <div class="card-header py-3" id="card-header2">
-                          <div class="mb-2">
-                            <img class="rounded-circle" src="" alt=""><i class="fa fa-file-image-o" aria-hidden="true" id="icon"></i>
-                          </div>
-                        </div>
+                        <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name 4</h6>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
-                        <div class="card-header py-3" id="card-header2">
-                          <div class="mb-2">
-                            <img class="rounded-circle" src="" alt=""><i class="fa fa-file-image-o" aria-hidden="true" id="icon"></i>
-                          </div>
-                        </div>
+                        <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name 5</h6>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
-                        <div class="card-header py-3" id="card-header2">
-                          <div class="mb-2">
-                            <img class="rounded-circle" src="" alt=""><i class="fa fa-file-image-o" aria-hidden="true" id="icon"></i>
-                          </div>
-                        </div>
+                        <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name 6</h6>
                         </div>
                       </div>
                     </div>

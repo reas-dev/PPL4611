@@ -95,9 +95,10 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-3 col-lg-1 col-xs-1 m-auto">
-                          <div class="m-2" id="icon">
-                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                        <div class="col-3 col-lg-4 col-xs-4 m-auto" id="icon">
+                          <div class="card shadow1 mb-2 m-auto" id="card2">
+                            <img class="card-header" sytle="z-index: 1; position: relative;" id="card-header2" src="../assets/img/logo_bgc.png">
+                            <i class="fa fa-heart-o content" sytle="z-index: 2;" aria-hidden="true" id="btn" onclick="change_icon()"></i>
                           </div>
                         </div>
                       </div>
@@ -106,7 +107,7 @@
                       <div class="card-body dropdown-item" id="card-body">
                         <div class="row" id="coloring1">
                           <div class="col-12 col-lg-12 col-xs-12 mb-2 text-center">
-                            <p class="text-small d-flex justify-content-between">Lorem ipsum deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi</p>
+                            <p class="text-small text-wrap d-flex justify-content-between">Lorem ipsum deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi</p>
                           </div>
                         </div>
                       </div>

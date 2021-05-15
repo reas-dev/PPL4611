@@ -95,14 +95,19 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-3 col-lg-1 col-xs-1 m-auto">
+                        <div class="col-3 col-lg-4 col-xs-4 m-auto" id="icon">
+                          <div class="card shadow1 mb-2 m-auto" id="card2">
+                            <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
+                          </div>
+                        </div>
+                        <!-- <div class="col-3 col-lg-1 col-xs-1 m-auto">
                           <div class="m-2" id="icon">
                             <i class="fa fa-file-image-o" aria-hidden="true"></i>
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="row">
-                        <div class="col-12 col-lg-12 col-xs-12 mb-2 text-center">
+                        <div class="col-12 col-lg-12 col-xs-12 mb-2 mt-2 text-center">
                           <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
                         </div>
                       </div>
