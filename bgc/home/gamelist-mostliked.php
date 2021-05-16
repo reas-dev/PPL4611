@@ -101,10 +101,10 @@
                   </div>
                 </div>
                 <div class="row" style="margin-top: 20px;">
-                  <div class="col-6 col-lg-3 col-xs-3 col-buttons">
+                  <div class="col-12 col-lg-3 col-xs-3 col-buttons">
                     <button class="btn btn-secondary buttons-41">New Games</button>
                   </div>
-                  <div class="col-6 col-lg-3 col-xs-3 col-buttons">
+                  <div class="col-12 col-lg-3 col-xs-3 col-buttons">
                     <button class="btn btn-secondary buttons-41 active">Most - Liked</button>
                   </div>
                 </div>
@@ -117,7 +117,7 @@
 
                   <!-- Approach -->         
                   <div class="row">
-                    <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
+                    <div class="col-12 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
                         <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
@@ -126,7 +126,7 @@
                       </div>
                     </div>
 
-                    <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
+                    <div class="col-12 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
                         <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
@@ -135,7 +135,7 @@
                       </div>
                     </div>
 
-                    <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
+                    <div class="col-12 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
                         <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
@@ -156,7 +156,7 @@
 
                   <!-- Approach -->         
                   <div class="row">
-                    <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
+                    <div class="col-12 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
                         <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
@@ -165,7 +165,7 @@
                       </div>
                     </div>
 
-                    <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
+                    <div class="col-12 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
                         <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">
@@ -174,7 +174,7 @@
                       </div>
                     </div>
 
-                    <div class="col-4 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
+                    <div class="col-12 col-lg-4 col-xs-12 mb-2" id="icon1" href="#">
                       <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
                         <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                         <div class="text-center m-2">

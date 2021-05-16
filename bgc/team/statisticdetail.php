@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Detail Game</title>
+  <title>Member Detail</title>
 
   <!-- Custom styles for this template-->
   <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
@@ -91,23 +91,94 @@
                     <div class="card-header py-3" id="card-header1">
                       <div class="row">
                         <div class="col-12 col-lg-12 col-xs-12 mb-2 text-center">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                          <h6 class="m-0 font-weight-bold" id="coloring">Alamat Game</h6>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-12 col-lg-4 col-xs-4 m-auto" id="icon">
                           <div class="card shadow1 mb-2 m-auto" id="card2">
-                            <img class="card-header" sytle="z-index: 1; position: relative;" id="card-header2" src="../assets/img/logo_bgc.png">
-                            <i class="fa fa-heart-o content" sytle="z-index: 2;" aria-hidden="true" id="btn" onclick="change_icon()"></i>
+                            <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
                           </div>
+                        </div>
+                        <!-- <div class="col-3 col-lg-1 col-xs-1 m-auto">
+                          <div class="m-2" id="icon">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                          </div>
+                        </div> -->
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-12 col-xs-12 mb-2 mt-2 text-center">
+                          <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
                         </div>
                       </div>
                     </div>
+                    
                     <div class="dropdown" aria-labelledby="icon">
                       <div class="card-body dropdown-item" id="card-body">
+                        
+                        <div class="container col-lg-12 col-xs-12 container-buttons">
+                          <div class="row">
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4">Member</button>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4">Schedule</button>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4 active">Statistic</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row" id="coloring">
+                          <div class="col col-2">
+                            <p class="text-small">#</p>
+                          </div>
+                          <div class="col col-7">
+                            <p class="text-small">Username</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">W</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">D</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">L</p>
+                          </div>
+                        </div>
                         <div class="row" id="coloring1">
-                          <div class="col-12 col-lg-12 col-xs-12 mb-2 text-center">
-                            <p class="text-small text-wrap d-flex justify-content-between">Lorem ipsum deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi deskripsi</p>
+                          <div class="col col-2">
+                            <i class="text-small">1</i>
+                          </div>
+                          <div class="col col-7">
+                            <p class="text-small">qwerty123</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">1</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">3</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">2</p>
+                          </div>
+                        </div>
+                        <div class="row" id="coloring1">
+                          <div class="col col-2">
+                            <i class="text-small">2</i>
+                          </div>
+                          <div class="col col-7">
+                            <p class="text-small">qwerty123</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">3</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">1</p>
+                          </div>
+                          <div class="col-1">
+                            <p class="text-small">2</p>
                           </div>
                         </div>
                       </div>

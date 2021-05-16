@@ -139,7 +139,7 @@
                         </div>
                         <div class="col-3 col-lg-2 col-xs-2">
                           <div class="m-2" id="icon">
-                            <button type="button" class="fa fa-bars dropdown-toggle" aria-hidden="true" data-toggle="dropdown" id="drop" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="fa fa-cogs dropdown-toggle" aria-hidden="true" data-toggle="dropdown" id="drop" aria-haspopup="true" aria-expanded="false">
                               </button>
                             <!-- Gambar mahkota berbayar, ini cma ganti smntara -->
                             <!-- ini nanti dropdown mahkotanya -->
