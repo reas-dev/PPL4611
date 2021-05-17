@@ -135,7 +135,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-3 col-lg-3 col-xs-3 text-right">
+                        <div class="col-12 col-lg-3 col-xs-3 text-right">
                           <div class="row">
                             <div class="col-12 col-lg-12 col-xs-12">
                               <h6 class="m-0 font-weight-bold" id="coloring">DD - MM - YYYY</h6>

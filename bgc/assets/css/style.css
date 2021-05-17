@@ -139,6 +139,36 @@ span#color {
     width: 28px;
     left: 100px;
 }
+
+form.user .form-control-user {
+    border-radius: 0.5rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+}
+
+form.user .btn-user {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: .75rem 1rem;
+}
+
+#icon2 {
+    color: #FFF;
+    min-width: 28px; 
+    min-height: 28px;
+}
+
+p.text-large {
+    font-size: 30px;
+}
+
+#drop1 {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    max-width: 45px;
+    max-height: 45px;
+}
 /* input#email {
     background-image: url(fa-eye-slash); 
     background-repeat: no-repeat; 

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Standing Detail</title>
+  <title>Member Detail</title>
 
   <!-- Custom styles for this template-->
   <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
@@ -112,59 +112,93 @@
                         </div>
                       </div>
                     </div>
+                    
                     <div class="dropdown" aria-labelledby="icon">
                       <div class="card-body dropdown-item" id="card-body">
+                        
+                        <div class="container col-lg-12 col-xs-12 container-buttons">
+                          <div class="row">
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4 active">Member</button>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4">Schedule</button>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4">Statistic</button>
+                            </div>
+                          </div>
+                        </div>
+
                         <div class="row" id="coloring">
-                          <div class="col col-2">
-                            <p class="text-small">#</p>
+                          <div class="col-12 col-lg-9 col-xs-9">
+                            <p class="text-large">Add Member</p>
                           </div>
-                          <div class="col col-7">
-                            <p class="text-small">Username</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">W</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">D</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">L</p>
+                          <div class="col-12 col-lg-3 col-xs-3">
+                            <p class="text-small text-center">
+                              <button class="fa fa-plus fa-3x" aria-hidden="true" id="drop1"></button>
+                            </p>
                           </div>
                         </div>
-                        <div class="row" id="coloring1">
-                          <div class="col col-2">
-                            <i class="text-small">1</i>
+                        
+                        <div class="row">
+                          <div class="col-2 col-lg-1 col-xs-1">
+                            <i class="fa fa-cogs m-2" id="icon2" aria-hidden="true"></i>
+                            <!-- <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png"> -->
+                              <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
                           </div>
-                          <div class="col col-7">
-                            <p class="text-small">qwerty123</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">1</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">3</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">2</p>
-                          </div>
-                        </div>
-                        <div class="row" id="coloring1">
-                          <div class="col col-2">
-                            <i class="text-small">2</i>
-                          </div>
-                          <div class="col col-7">
-                            <p class="text-small">qwerty123</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">3</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">1</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">2</p>
+                          <div class="col-7 col-lg-8 col-xs-8 mb-2">
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring">Name</h6>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring2">Username Capten</h6>
+                              </div>
+                            </div>
                           </div>
                         </div>
+
+                        <div class="row">
+                          <div class="col-2 col-lg-1 col-xs-1 text-center">
+                            <!-- <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png"> -->
+                              <i class="fa fa-user-circle m-2" id="icon2" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-7 col-lg-8 col-xs-8 mb-2">
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring">Name</h6>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring2">Username 1</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-2 col-lg-1 col-xs-1 text-center">
+                            <!-- <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png"> -->
+                              <i class="fa fa-user-circle m-2" id="icon2" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-7 col-lg-8 col-xs-8 mb-2">
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring">Name</h6>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring2">Username 2</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Standing Detail</title>
+  <title>Statistic</title>
 
   <!-- Custom styles for this template-->
   <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
@@ -90,11 +90,6 @@
                   <div class="card shadow mb-4" id="card1">
                     <div class="card-header py-3" id="card-header1">
                       <div class="row">
-                        <div class="col-12 col-lg-12 col-xs-12 mb-2 text-center">
-                          <h6 class="m-0 font-weight-bold" id="coloring">Alamat Game</h6>
-                        </div>
-                      </div>
-                      <div class="row">
                         <div class="col-12 col-lg-4 col-xs-4 m-auto" id="icon">
                           <div class="card shadow1 mb-2 m-auto" id="card2">
                             <img class="card-header" id="card-header2" src="../assets/img/logo_bgc.png">
@@ -111,60 +106,78 @@
                           <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-12 col-xs-12 mb-2 mt-2 text-center">
+                          <h6 class="m-0 font-weight-bold" id="coloring2">Junior Player</h6>
+                        </div>
+                      </div>
                     </div>
+                    
                     <div class="dropdown" aria-labelledby="icon">
                       <div class="card-body dropdown-item" id="card-body">
-                        <div class="row" id="coloring">
-                          <div class="col col-2">
-                            <p class="text-small">#</p>
-                          </div>
-                          <div class="col col-7">
-                            <p class="text-small">Username</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">W</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">D</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">L</p>
+                        
+                        <div class="container col-lg-12 col-xs-12 container-buttons">
+                          <div class="row">
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4">My Profile</button>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4">My Team's</button>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <button class="btn btn-warning buttons-4 active">Statistic</button>
+                            </div>
                           </div>
                         </div>
-                        <div class="row" id="coloring1">
-                          <div class="col col-2">
-                            <i class="text-small">1</i>
+
+                        <div class="row">
+                          <div class="col-2 col-lg-1 col-xs-1">
+                            <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png">
+                              <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
                           </div>
-                          <div class="col col-7">
-                            <p class="text-small">qwerty123</p>
+                          <div class="col-7 col-lg-8 col-xs-8 mb-2">
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring2">Alamat Game</h6>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-1">
-                            <p class="text-small">1</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">3</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">2</p>
-                          </div>
-                        </div>
-                        <div class="row" id="coloring1">
-                          <div class="col col-2">
-                            <i class="text-small">2</i>
-                          </div>
-                          <div class="col col-7">
-                            <p class="text-small">qwerty123</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">3</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">1</p>
-                          </div>
-                          <div class="col-1">
-                            <p class="text-small">2</p>
+                          <div class="col-3 col-lg-3 col-xs-3 m-auto text-center">
+                            <!-- <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png"> -->
+                              <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
+                              <h6 class="m-0 font-weight-bold" id="coloring">#4</h6>
                           </div>
                         </div>
+
+                        <div class="row">
+                          <div class="col-2 col-lg-1 col-xs-1">
+                            <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png">
+                              <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
+                          </div>
+                          <div class="col-7 col-lg-8 col-xs-8 mb-2">
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-12 col-xs-12">
+                                <h6 class="m-0 font-weight-bold" id="coloring2">Alamat Game</h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3 col-lg-3 col-xs-3 m-auto text-center">
+                            <!-- <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png"> -->
+                              <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
+                              <h6 class="m-0 font-weight-bold" id="coloring">#4</h6>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
