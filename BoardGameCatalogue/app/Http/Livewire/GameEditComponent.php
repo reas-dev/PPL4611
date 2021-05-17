@@ -55,6 +55,7 @@ class GameEditComponent extends Component
 
     public function render()
     {
-        return view('livewire.game-edit-component')->layout('layouts.app');
+        $games = Game::all();
+        return view('livewire.game-edit-component', ['games' => $games])->layout('layouts.admin-dashboard');
     }
 }

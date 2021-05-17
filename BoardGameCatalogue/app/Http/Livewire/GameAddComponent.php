@@ -44,6 +44,6 @@ class GameAddComponent extends Component
     public function render()
     {
         $games = Game::all();
-        return view('livewire.game-add-component', ['games' => $games])->layout('layouts.app');
+        return view('livewire.game-add-component', ['games' => $games])->layout('layouts.admin-dashboard');
     }
 }
