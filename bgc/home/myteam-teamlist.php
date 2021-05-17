@@ -91,7 +91,7 @@
                 </div>
               </div>
 
-              <div class="container col-lg-12 col-xs-12 container-buttons">
+              <!-- <div class="container col-lg-12 col-xs-12 container-buttons">
                 <div class="row">
                   <div class="col-6 col-lg-2 col-xs-3 col-buttons">
                     <button class="btn btn-warning buttons-4 active">My Team's</button>
@@ -106,6 +106,28 @@
                   </div>
                   <div class="col-6 col-lg-2 col-xs-3 col-buttons">
                     <button class="btn btn-secondary buttons-4">Schedule</button>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="container col-lg-12 col-xs-12 container-buttons" id="coloring1">
+                <div class="row">
+                  <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
+                    <a class="font-weight-bold btn-dark active" id="menu" type="button">My Team's</a>
+                  </div>
+                  <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
+                    <!-- <button class="btn btn-warning buttons-4 active">Game List</button> -->
+                    <a class="font-weight-bold btn-dark disabled" id="menu" type="button">Game List</a>
+                  </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                  <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
+                    <!-- <button class="btn btn-secondary buttons-41">New Games</button> -->
+                    <a class="font-weight-bold btn-light active" id="menu" type="button">Team List</a>
+                  </div>
+                  <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
+                    <!-- <button class="btn btn-secondary buttons-41 active">Most - Liked</button> -->
+                    <a class="font-weight-bold btn-light disabled" id="menu" type="button">Schedule</a>
                   </div>
                 </div>
               </div>

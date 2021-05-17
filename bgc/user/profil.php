@@ -116,7 +116,7 @@
                     <div class="dropdown" aria-labelledby="icon">
                       <div class="card-body dropdown-item" id="card-body">
                         
-                        <div class="container col-lg-12 col-xs-12 container-buttons">
+                        <!-- <div class="container col-lg-12 col-xs-12 container-buttons">
                           <div class="row">
                             <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                               <button class="btn btn-warning buttons-4 active">My Profile</button>
@@ -126,6 +126,23 @@
                             </div>
                             <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                               <button class="btn btn-warning buttons-4">Statistic</button>
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <div class="container col-lg-12 col-xs-12 container-buttons" id="coloring1">
+                          <div class="row">
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <!-- <button class="btn btn-warning buttons-4">My Profile</button> -->
+                              <a class="font-weight-bold btn-dark active" id="menu" type="button">My Profile</a>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <!-- <button class="btn btn-warning buttons-4 active">My Team's</button> -->
+                              <a class="font-weight-bold btn-dark disabled" id="menu" type="button">My Team's</a>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
+                              <!-- <button class="btn btn-warning buttons-4">Statistic</button> -->
+                              <a class="font-weight-bold btn-dark disabled" id="menu" type="button">Statistic</a>
                             </div>
                           </div>
                         </div>
