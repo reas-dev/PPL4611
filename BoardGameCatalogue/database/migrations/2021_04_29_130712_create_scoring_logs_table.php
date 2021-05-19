@@ -15,16 +15,19 @@ class CreateScoringLogsTable extends Migration
     {
         Schema::create('scoring_logs', function (Blueprint $table) {
             $table->id();
-            $table->string('scorer_code');
-            // $table->string('target_code');
+            $table->string('scorer_code')->unique();
+            $table->string('target_code')->unique();
             $table->string('schedule_code')->unique();
             $table->string('score');
             $table->timestamps();
             $table->softDeletes();
 
-            $table->foreign('scorer_code')->references('code')->on('team_memberships');
+            // $table->unsignedBigInteger('scorer_code')->unique();
+            // $table->foreign('scorer_code')->references('code')->on('team_memberships');
+            // $table->unsignedBigInteger('target_code')->unique();
             // $table->foreign('target_code')->references('code')->on('team_memberships');
-            $table->foreign('schedule_code')->references('code')->on('team_schedules');
+            // $table->unsignedBigInteger('schedule_code')->unique();
+            // $table->foreign('schedule_code')->references('code')->on('team_schedules');
         });
     }
 

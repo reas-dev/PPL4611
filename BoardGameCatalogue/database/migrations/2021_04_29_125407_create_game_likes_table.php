@@ -15,13 +15,15 @@ class CreateGameLikesTable extends Migration
     {
         Schema::create('game_likes', function (Blueprint $table) {
             $table->id();
-            $table->string('game_code');
-            $table->string('user_username');
+            $table->string('game_code')->unique();
+            $table->string('user_username')->unique();
             $table->timestamps();
             $table->softDeletes();
 
-            $table->foreign('game_code')->references('code')->on('games');
-            $table->foreign('user_username')->references('username')->on('users');
+            // $table->unsignedBigInteger('game_code')->unique();
+            // $table->foreign('game_code')->references('code')->on('games');
+            // $table->unsignedBigInteger('user_username');
+            // $table->foreign('user_username')->references('username')->on('users');
         });
     }
 

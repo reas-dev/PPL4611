@@ -16,13 +16,14 @@ class CreateTeamsTable extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
             $table->string('code')->unique();
-            $table->string('game_code');
+            $table->string('game_code')->unique();
             $table->string('name');
             $table->string('icon');
             $table->timestamps();
             $table->softDeletes();
 
-            $table->foreign('game_code')->references('code')->on('games');
+            // $table->unsignedBigInteger('game_code')->unique();
+            // $table->foreign('game_code')->references('code')->on('games');
         });
     }
 
