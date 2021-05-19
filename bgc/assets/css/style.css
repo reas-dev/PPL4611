@@ -1,5 +1,5 @@
 #card-body {
-    background-color: #5a5c69 !important;
+    background-color: #343a40 !important;
 }
 
 #card-header {
@@ -86,7 +86,7 @@ span#color {
 }
 
 #card-header1 {
-    background-color: #5a5c69 !important;
+    background-color: #343a40 !important;
     border-bottom: 0px;
 }
 
@@ -211,6 +211,14 @@ button:not(:disabled) {
     margin: 1rem;
 }
 
+#btn {
+    background-color: transparent;
+}
+
+.fa-heart {
+    color: #FC0000;
+}
+
 /* input#email {
     background-image: url(fa-eye-slash); 
     background-repeat: no-repeat; 
@@ -227,4 +235,8 @@ button:not(:disabled) {
     color: #000;
     text-decoration: none;
     background-color: #dbdbdb;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
 }
