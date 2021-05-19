@@ -20,8 +20,7 @@ class CreateMembershipScoresTable extends Migration
             $table->timestamps();
             $table->softDeletes();
 
-            // $table->unsignedBigInteger('member_code')->unique();
-            // $table->foreign('member_code')->references('code')->on('team_memberships');
+            $table->foreign('member_code')->references('code')->on('team_memberships');
         });
     }
 
