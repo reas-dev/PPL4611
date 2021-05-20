@@ -1,5 +1,5 @@
 #card-body {
-    background-color: #5a5c69 !important;
+    background-color: #343a40 !important;
 }
 
 #card-header {
@@ -86,7 +86,7 @@ span#color {
 }
 
 #card-header1 {
-    background-color: #5a5c69 !important;
+    background-color: #343a40 !important;
     border-bottom: 0px;
 }
 
@@ -169,6 +169,56 @@ p.text-large {
     max-width: 45px;
     max-height: 45px;
 }
+
+[type=button]:not(:disabled),
+button:not(:disabled) {
+    padding: 0.2rem;
+}
+
+.btn-dark.disabled, 
+.btn-dark:disabled {
+    color: #fff;
+    background-color: #5a5c69;
+    border-color: #5a5c69;
+}
+
+.btn-dark:not(:disabled):not(.disabled).active, 
+.btn-dark:not(:disabled):not(.disabled):active, 
+.show > .btn-dark.dropdown-toggle {
+    color: #fff;
+    background-image: linear-gradient(white, #fd4801);
+    border-radius: 10% !important;
+    border-color:#3d3e47;
+}
+
+.btn-light.disabled, 
+.btn-light:disabled {
+    color: #fff;
+    background-color: #5a5c69;
+    border-color: #5a5c69;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, 
+.btn-light:not(:disabled):not(.disabled):active, 
+.show > .btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #8d8f92;
+    border-radius: 10% !important;
+    border-color:#3d3e47;
+}
+
+#menu {
+    margin: 1rem;
+}
+
+#btn {
+    background-color: transparent;
+}
+
+.fa-heart {
+    color: #FC0000;
+}
+
 /* input#email {
     background-image: url(fa-eye-slash); 
     background-repeat: no-repeat; 
@@ -185,4 +235,8 @@ p.text-large {
     color: #000;
     text-decoration: none;
     background-color: #dbdbdb;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
 }

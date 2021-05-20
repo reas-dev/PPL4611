@@ -33,51 +33,6 @@
           <!-- Card Body -->
           <div class="card-body" id="card-body">
 
-            <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-black topbar mb-4 static-top shadow">
-            
-              <!-- Topbar Navbar -->
-              <ul class="navbar-nav mr-auto">
-                
-                <!-- Nav Item - Menu Information -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-2">
-                  <h1 class="h4 mb-0 text-gray-800" id="home">Home</h1>
-                </div>
-              </ul>
-              <!-- End of Topbar -->
-
-              <!-- Topbar Navbar -->
-              <ul class="navbar-nav ml-auto">
-                
-                <!-- Plus Team -->
-                <li class="nav-item dropdown no-arrow">
-                  <a class="nav-link dropdown-toggle" href="#" role="button">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                  </a>
-                </li>
-                
-                <!-- Batas -->
-                <li class="nav-item dropdown no-arrow">
-                  <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="batas">
-                    <span>|</span>
-                  </a>
-                </li>
-
-                <!-- Nav Item - User Information -->
-                <li class="nav-item dropdown no-arrow">
-                  <a class="nav-link dropdown-toggle" href="#" role="button">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    <!-- <img class="img-profile rounded-circle" src="#"> -->
-                  </a>
-                </li>
-
-              </ul>
-              
-            </nav>
-            <!-- End of Topbar -->
-
             <!-- Begin Page Content -->
             <div class="container-fluid">
               
@@ -89,6 +44,7 @@
                   <!-- Approach -->
                   <div class="card shadow mb-4" id="card1">
                     <div class="card-header py-3" id="card-header1">
+                      <i class="fa fa-arrow-left text-white mx-3 my-3" aria-hidden="true" type="button" id="btn"></i>
                       <div class="row">
                         <div class="col-12 col-lg-4 col-xs-4 m-auto" id="icon">
                           <div class="card shadow1 mb-2 m-auto" id="card2">
@@ -116,16 +72,19 @@
                     <div class="dropdown" aria-labelledby="icon">
                       <div class="card-body dropdown-item" id="card-body">
                         
-                        <div class="container col-lg-12 col-xs-12 container-buttons">
+                        <div class="container col-lg-12 col-xs-12 container-buttons" id="coloring1">
                           <div class="row">
                             <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
-                              <button class="btn btn-warning buttons-4">My Profile</button>
+                              <!-- <button class="btn btn-warning buttons-4">My Profile</button> -->
+                              <a class="font-weight-bold btn-dark disabled" id="menu" type="button">My Profile</a>
                             </div>
                             <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
-                              <button class="btn btn-warning buttons-4 active">My Team's</button>
+                              <!-- <button class="btn btn-warning buttons-4 active">My Team's</button> -->
+                              <a class="font-weight-bold btn-dark active" id="menu" type="button">My Team's</a>
                             </div>
                             <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
-                              <button class="btn btn-warning buttons-4">Statistic</button>
+                              <!-- <button class="btn btn-warning buttons-4">Statistic</button> -->
+                              <a class="font-weight-bold btn-dark disabled" id="menu" type="button">Statistic</a>
                             </div>
                           </div>
                         </div>
