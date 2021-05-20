@@ -7,6 +7,8 @@ use App\Http\Livewire\GameHomeComponent;
 use App\Http\Livewire\GameAddComponent;
 use App\Http\Livewire\GameEditComponent;
 
+use App\Http\Livewire\TeamAddComponent;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +40,11 @@ Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 
     });
 });
 
+Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
+    Route::group(['prefix' => 'teams'], function(){
+        Route::get('/create', TeamAddComponent::class)->name('teams.add');
+    });
+});
 Route::get('/home', HomeComponent::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

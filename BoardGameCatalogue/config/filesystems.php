@@ -68,6 +68,7 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
         public_path('storage/game-images') => storage_path('app/game-images'),
+        public_path('storage/team-icons') => storage_path('app/team-icons'),
     ],
 
 ];

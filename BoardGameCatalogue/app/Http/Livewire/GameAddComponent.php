@@ -9,7 +9,6 @@ use Livewire\WithFileUploads;
 use App\Models\Game;
 
 use Illuminate\Support\Str;
-use Carbon\Carbon;
 
 class GameAddComponent extends Component
 {
@@ -27,7 +26,7 @@ class GameAddComponent extends Component
         ]);
 
         $code = Str::random(20);
-        $imageName = $code . '-' . Carbon::now()->timestamp . '.' . $this->image->extension();
+        $imageName = $code . '.' . $this->image->extension();
 
         // $this->image->storeAs('game-images', $imageName);
 

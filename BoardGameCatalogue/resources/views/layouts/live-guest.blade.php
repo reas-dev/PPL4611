@@ -16,10 +16,16 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        @livewireStyles
     </head>
+
     <body>
-        <div class="font-sans text-gray-900 antialiased">
+        <main>
             {{ $slot }}
-        </div>
+        </main>
+        @stack('modals')
+
+        @livewireScripts
+        @stack('scripts')
     </body>
 </html>
