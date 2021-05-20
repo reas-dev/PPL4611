@@ -50,7 +50,14 @@
                       <input type="text" name="username2" id="username2" class="form-control form-control-user" placeholder="Username #2" required>
                     </div>
                     <div class="form-group">
-                      <input type="date" name="date" id="date" class="form-control form-control-user" placeholder="Date" required>
+                      <div class="row">
+                        <div class="col-6 col-lg-6 col-xs-6">
+                          <input type="date" name="date" id="date" class="form-control form-control-user" placeholder="Date" required>
+                        </div>
+                        <div class="col-6 col-lg-6 col-xs-6">
+                           <input type="text" name="time" id="time" class="form-control form-control-user timepicker" placeholder="Time" required>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <div class="row">
@@ -79,6 +86,13 @@
 	<script src="../assets/js/popper.js"></script> 
   <script src="../assets/js/bootstrap.js"></script>
   <script src="../assets/js/sb-admin-2.min.js"></script>
+  <script src="../assets/js/bootstrap-timepicker.js"></script>
+  <script>
+    $('.timepicker').timepicker({
+    showInputs: false,
+    showMeridian: false
+    })
+  </script>
 
 </body>
 
