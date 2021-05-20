@@ -33,6 +33,51 @@
           <!-- Card Body -->
           <div class="card-body" id="card-body">
 
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-black topbar mb-4 static-top shadow">
+            
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav mr-auto">
+                
+                <!-- Nav Item - Menu Information -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-2">
+                  <h1 class="h4 mb-0 text-gray-800" id="home">Home</h1>
+                </div>
+              </ul>
+              <!-- End of Topbar -->
+
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav ml-auto">
+                
+                <!-- Plus Team -->
+                <li class="nav-item dropdown no-arrow">
+                  <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </a>
+                </li>
+                
+                <!-- Batas -->
+                <li class="nav-item dropdown no-arrow">
+                  <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="batas">
+                    <span>|</span>
+                  </a>
+                </li>
+
+                <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                  <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <!-- <img class="img-profile rounded-circle" src="#"> -->
+                  </a>
+                </li>
+
+              </ul>
+              
+            </nav>
+            <!-- End of Topbar -->
+
             <!-- Begin Page Content -->
             <div class="container-fluid">
               
@@ -44,7 +89,6 @@
                   <!-- Approach -->
                   <div class="card shadow mb-4" id="card1">
                     <div class="card-header py-3" id="card-header1">
-                      <i class="fa fa-arrow-left text-white mx-3 my-3" aria-hidden="true" type="button" id="btn"></i>
                       <div class="row">
                         <div class="col-12 col-lg-12 col-xs-12 mb-2 text-center">
                           <h6 class="m-0 font-weight-bold" id="coloring">Game Name</h6>
@@ -54,7 +98,7 @@
                         <div class="col-12 col-lg-4 col-xs-4 m-auto" id="icon">
                           <div class="card shadow1 mb-2 m-auto" id="card2">
                             <img class="card-header" sytle="z-index: 1; position: relative;" id="card-header2" src="../assets/img/logo_bgc.png">
-                            <i onclick="myFunction(this)" class="fa fa-heart-o content" sytle="z-index: 2;" aria-hidden="true" id="btn" type="button"></i>
+                            <i class="fa fa-heart-o content bg-dark" sytle="z-index: 2;" aria-hidden="true" id="btn" type="button" onclick="change_icon()"></i>
                           </div>
                         </div>
                       </div>
@@ -91,30 +135,6 @@
 	<script src="../assets/js/popper.js"></script> 
   <script src="../assets/js/bootstrap.js"></script>
   <script src="../assets/js/sb-admin-2.min.js"></script>
-  <script>
-    function myFunction(x) {
-      if (x.classList.contains('fa-heart-o')){
-        x.classList.remove('fa-heart-o');
-        x.classList.toggle('fa-heart');
-        const icon = x.getElementById("btn");
-        if(icon.style.color == "#FFF"){
-          icon.style.color = "red";
-        }else{
-          icon.style.color = "#FFF";
-        }
-      }
-      else{
-        x.classList.remove('fa-heart');
-        x.classList.toggle('fa-heart-o');
-        const icon = x.getElementById("btn");
-        if(icon.style.color == "#FFF"){
-          icon.style.color = "red";
-        }else{
-          icon.style.color = "#FFF";
-        }
-      }  
-    }
-  </script>
 
 </body>
 
