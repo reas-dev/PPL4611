@@ -20,7 +20,7 @@ A11.2018.10888 - Andreas Yulianto : Project  Scope Statement, User Interface, Mo
 A11.2018.10990 - Freddy Haryono : Project  Scope Statement, WBS, Diagram.
 
 ## Contributor
-A11.2018.10847 - Favian Aldo Hermawan : Project Manager.
+A11.2018.10847 - Favian Aldo Hermawan : Project Manager, Front-End Programmer.
 
 A11.2018.10853 - Nathaniel Kevin Santoso : UI/UX Designer.
 
