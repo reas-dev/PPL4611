@@ -1,0 +1,253 @@
+:root {
+    --main-dark: #181829;
+    --main-gray: #5a5c69;
+    --navy-gray: #222232;
+    --main-orange: #fd4801;
+}
+
+.navy-gray {
+    background-color: var(--navy-gray);
+}
+
+.main-orange {
+    color: var(--main-orange);
+}
+
+body {
+    background-color: var(--main-dark);
+}
+
+#card-body {
+    /* background-color: #5a5c69 !important; */
+    background-color: var(--main-dark);
+}
+
+#card-header {
+    /*background-color: #5a5c69 !important; */
+    background-color: var(--main-dark);
+}
+
+.card {
+    /* background-color: #343a40 !important; */
+    background-color: var(--main-dark);
+    font-weight: bold;
+}
+
+.card.shadow.mb-4 {
+    border: 3px solid #e3e6f0;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+}
+
+.small {
+    color: #fff;
+}
+
+.h4.text-gray-900 {
+    color: #fff;
+}
+
+a#color {
+    color: #fff;
+}
+
+#home {
+    color: #fff !important;
+}
+
+span#color {
+    color: #fff;
+}
+
+#icon {
+    color: #fff;
+}
+
+#coloring {
+    color: #fff;
+    font-weight: bold;
+}
+
+#coloring1 {
+    color: #fff;
+}
+
+#coloring2 {
+    color: rgba(255, 255, 255, 0.788);
+}
+
+#drop {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto;
+}
+
+.container-buttons {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.buttons-4 {
+    width: 100px;
+    border: blue;
+}
+
+.btn-warning:not(:disabled):not(.disabled).active {
+    color: #000;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active {
+    color: #000;
+}
+
+#card1 {
+    border: 0px;
+}
+
+#card-header1 {
+    background-color: var(--main-dark); !important;
+    border-bottom: 0px;
+}
+
+.shadow1 {
+    box-shadow: 0.45rem 0.35rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+#icon1 {
+    color: #fff;
+    min-height: 128px;
+    min-width: 128px;
+    margin-bottom: 3rem !important;
+}
+
+#card2 {
+    border: 0px;
+    border-radius: 50% !important;
+    max-height: 128px;
+    max-width: 128px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#card-header2 {
+    background-color: var(--main-dark); !important;
+    border-bottom: 0px;
+    border-radius: 50% !important;
+    min-height: 128px;
+    min-width: 128px;
+    padding: 0px;
+}
+
+.buttons-41 {
+    width: 120px;
+    border: blue;
+}
+
+#gambar {
+    max-width: 128px;
+    max-height: 128px;
+}
+
+#gambar-icon {
+    max-width: 28px;
+    max-height: 28px;
+}
+
+.content {
+    position: absolute;
+    width: 28px;
+    left: 100px;
+}
+
+form.user .form-control-user {
+    border-radius: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+}
+
+form.user .btn-user {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+
+#icon2 {
+    color: #fff;
+    min-width: 28px;
+    min-height: 28px;
+}
+
+p.text-large {
+    font-size: 30px;
+}
+
+#drop1 {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+[type="button"]:not(:disabled),
+button:not(:disabled) {
+    padding: 0.2rem;
+}
+
+.btn-dark.disabled,
+.btn-dark:disabled {
+    color: #fff;
+    background-color: #5a5c69;
+    border-color: #5a5c69;
+}
+
+.btn-dark:not(:disabled):not(.disabled).active,
+.btn-dark:not(:disabled):not(.disabled):active,
+.show > .btn-dark.dropdown-toggle {
+    color: #fff;
+    background-image: linear-gradient(#FBB917, #fd4801);
+    /* background-color: #fd4801; */
+    border-radius: 10% !important;
+    border-color: #3d3e47;
+}
+
+.btn-light.disabled,
+.btn-light:disabled {
+    color: #fff;
+    background-color: #5a5c69;
+    border-color: #5a5c69;
+}
+
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show > .btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: var(--main-dark);
+    border-radius: 10% !important;
+    border-color: #3d3e47;
+}
+
+#menu {
+    margin: 1rem;
+}
+
+/* input#email {
+    background-image: url(fa-eye-slash); 
+    background-repeat: no-repeat; 
+    background-position: 0px 0px; 
+    padding-left: 16px; 
+} */
+
+#batas {
+    height: 4.2rem;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #000;
+    text-decoration: none;
+    background-color: #dbdbdb;
+}

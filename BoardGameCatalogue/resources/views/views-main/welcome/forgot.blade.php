@@ -12,11 +12,11 @@
   <title>Forgot Password</title>
 
   <!-- Custom styles for this template-->
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
-<body class="bg-dark">
+<body>
   <div class="container">
     <!-- Outer Row -->
     <div class="row justify-content-md-center">
