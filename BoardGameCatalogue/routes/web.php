@@ -89,6 +89,22 @@ Route::get('/team/statistic-detail', function () {
     return view('views-main/team/statisticdetail');
 });
 
+
+Route::get('/home/game-detail', function () {
+    return view('views-main/home/detailgame');
+});
+Route::get('/home/game-list-most-liked', function () {
+    return view('views-main/home/gamelist-mostliked');
+});
+Route::get('/home/game-list-new-games', function () {
+    return view('views-main/home/gamelist-newgames');
+});
+Route::get('/home/myteam-schedule', function () {
+    return view('views-main/home/myteam-schedule');
+});
+Route::get('/home/myteam-teamlist', function () {
+    return view('views-main/home/myteam-teamlist');
+});
 Route::get('/home/standing-detail', function () {
     return view('views-main/home/standingdetail');
 });

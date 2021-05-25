@@ -2,7 +2,12 @@
     --main-dark: #181829;
     --main-gray: #5a5c69;
     --navy-gray: #222232;
+    --dim-gray: #696969;
     --main-orange: #fd4801;
+}
+
+.main-gray {
+    background-color: var(--main-gray);
 }
 
 .navy-gray {
