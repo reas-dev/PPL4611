@@ -219,6 +219,25 @@ button:not(:disabled) {
     color: #FC0000;
 }
 
+#drop2 {
+    color: rgb(25, 255, 140);
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto;
+}
+
+#drop3 {
+    color: rgb(255, 96, 96);
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto;
+}
+
+.dropdown-menu {
+    color: #fff;
+    background-color: #343a40;
+}
+
 /* input#email {
     background-image: url(fa-eye-slash); 
     background-repeat: no-repeat; 
