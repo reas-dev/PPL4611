@@ -12,4 +12,9 @@ class Game extends Model
     use SoftDeletes;
 
     protected $guarded = [];
+
+    // public function likes()
+    // {
+    //     return $this->hasMany(GameLike::class, 'game_code', 'code');
+    // }
 }

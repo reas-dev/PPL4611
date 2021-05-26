@@ -49,6 +49,7 @@ class TeamAddComponent extends Component
 
         return redirect('/');
     }
+
     public function render()
     {
         $games = Game::all()->sortBy("name");

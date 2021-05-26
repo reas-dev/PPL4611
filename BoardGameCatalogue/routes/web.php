@@ -3,11 +3,19 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\HomeComponent;
+//Admin Component
 use App\Http\Livewire\GameHomeComponent;
 use App\Http\Livewire\GameAddComponent;
 use App\Http\Livewire\GameEditComponent;
 
+//User Component
+use App\Http\Livewire\TeamListComponent;
+use App\Http\Livewire\TeamHomeComponent;
 use App\Http\Livewire\TeamAddComponent;
+use App\Http\Livewire\TeamAddMemberComponent;
+use App\Http\Livewire\TeamAddScheduleComponent;
+
+use App\Http\Livewire\UserGameListComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +38,7 @@ Route::get('/logout', function(){
 });
 
 Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 'admin'], function(){
-    Route::get('/', HomeComponent::class);
+    Route::get('/', HomeComponent::class)->name('admin');
 
     Route::group(['prefix' => 'games'], function(){
         Route::get('/', GameHomeComponent::class)->name('admin.games');
@@ -42,7 +50,14 @@ Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
     Route::group(['prefix' => 'teams'], function(){
+        Route::get('/', TeamListComponent::class)->name('teams');
+        Route::get('/{code}', TeamHomeComponent::class)->name('teams.show');
+        Route::get('/{code}/create-member', TeamAddMemberComponent::class)->name('teams.add-member');
+        Route::get('/{code}/create-schedule', TeamAddscheduleComponent::class)->name('teams.add-schedule');
         Route::get('/create', TeamAddComponent::class)->name('teams.add');
+    });
+    Route::group(['prefix' => 'games'], function(){
+        Route::get('/', UserGameListComponent::class)->name('games');
     });
 });
 Route::get('/home', HomeComponent::class);
