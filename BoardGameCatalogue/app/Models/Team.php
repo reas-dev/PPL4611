@@ -12,4 +12,9 @@ class Team extends Model
     use SoftDeletes;
 
     protected $guarded = [];
+
+    public function members()
+    {
+        return $this->hasMany(TeamMembership::class, 'team_code', 'code');
+    }
 }

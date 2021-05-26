@@ -7,8 +7,6 @@ use Livewire\WithFileUploads;
 
 use App\Models\Game;
 
-use Carbon\Carbon;
-
 class GameEditComponent extends Component
 {
     use WithFileUploads;
@@ -42,7 +40,7 @@ class GameEditComponent extends Component
             $this->validate([
                 'newimage' => ['required','mimes:jpg,jpeg,png', 'max:1024'],
             ]);
-            $imageName = $this->code . '-' . Carbon::now()->timestamp . '.' . $this->newimage->extension();
+            $imageName = $this->code . '.' . $this->newimage->extension();
             $newname = $this->newimage->storeAs('game-images', $imageName);
             $game->image = $newname;
         }
@@ -55,6 +53,7 @@ class GameEditComponent extends Component
 
     public function render()
     {
-        return view('livewire.game-edit-component')->layout('layouts.app');
+        $games = Game::all();
+        return view('livewire.game-edit-component', ['games' => $games])->layout('layouts.admin-dashboard');
     }
 }

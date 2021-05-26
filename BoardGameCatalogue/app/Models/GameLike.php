@@ -12,4 +12,14 @@ class GameLike extends Model
     use SoftDeletes;
 
     protected $guarded = [];
+
+    // public function users()
+    // {
+    //     return $this->hasMany(User::class, 'username', 'user_username');
+    // }
+
+    // public function game()
+    // {
+    //     return $this->belongsTo(Game::class, 'code', 'game_code');
+    // }
 }
