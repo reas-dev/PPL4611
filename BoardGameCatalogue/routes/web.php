@@ -44,7 +44,6 @@ Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 
         Route::get('/', GameHomeComponent::class)->name('admin.games');
         Route::get('/create', GameAddComponent::class)->name('admin.games.add');
         Route::get('/edit/{code}', GameEditComponent::class)->name('admin.games.edit');
-        // Route::delete('/delete/{code}', GameDeComponent::class)->name('admin.games.delete');
     });
 });
 
@@ -65,3 +64,71 @@ Route::get('/home', HomeComponent::class);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+
+//Layout Testing Frontend
+Route::get('/welcome/register', function () {
+    return view('views-main/welcome/register');
+});
+Route::get('/welcome/login', function () {
+    return view('views-main/welcome/login');
+});
+Route::get('/welcome/forgot-password', function () {
+    return view('views-main/welcome/forgot');
+});
+
+Route::get('/user/home-page', function () {
+    return view('views-main/user/home-page');
+});
+Route::get('/user/my-team', function () {
+    return view('views-main/user/myteam');
+});
+Route::get('/user/profile', function () {
+    return view('views-main/user/profile');
+});
+Route::get('/user/statistic', function () {
+    return view('views-main/user/statistic');
+});
+
+Route::get('/team/add-member', function () {
+    return view('views-main/team/addmember');
+});
+Route::get('/team/add-schedule', function () {
+    return view('views-main/team/addschedule');
+});
+Route::get('/team/add-scoring', function () {
+    return view('views-main/team/addscoring');
+});
+Route::get('/team/add-team', function () {
+    return view('views-main/team/addteam');
+});
+Route::get('/team/member-detail', function () {
+    return view('views-main/team/memberdetail');
+});
+Route::get('/team/schedule-detail', function () {
+    return view('views-main/team/scheduledetail');
+});
+Route::get('/team/statistic-detail', function () {
+    return view('views-main/team/statisticdetail');
+});
+
+
+Route::get('/home/game-detail', function () {
+    return view('views-main/home/detailgame');
+});
+Route::get('/home/game-list-most-liked', function () {
+    return view('views-main/home/gamelist-mostliked');
+});
+Route::get('/home/game-list-new-games', function () {
+    return view('views-main/home/gamelist-newgames');
+});
+Route::get('/home/myteam-schedule', function () {
+    return view('views-main/home/myteam-schedule');
+});
+Route::get('/home/myteam-teamlist', function () {
+    return view('views-main/home/myteam-teamlist');
+});
+Route::get('/home/standing-detail', function () {
+    return view('views-main/home/standingdetail');
+});
