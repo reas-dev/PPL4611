@@ -32,15 +32,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/logout', function(){
+Route::get('/logout', function () {
     auth()->logout();
     return redirect('/');
 });
 
+Route::group(['middleware' => ['auth:sanctum', 'verified', 'admin'], 'prefix' => 'admin'], function () {
+    Route::get('/', HomeComponent::class);
+=======
 Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 'admin'], function(){
     Route::get('/', HomeComponent::class)->name('admin');
 
-    Route::group(['prefix' => 'games'], function(){
+    Route::group(['prefix' => 'games'], function () {
         Route::get('/', GameHomeComponent::class)->name('admin.games');
         Route::get('/create', GameAddComponent::class)->name('admin.games.add');
         Route::get('/edit/{code}', GameEditComponent::class)->name('admin.games.edit');
@@ -64,6 +67,7 @@ Route::get('/home', HomeComponent::class);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
 
 
 

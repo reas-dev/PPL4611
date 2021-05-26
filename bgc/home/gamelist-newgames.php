@@ -49,6 +49,79 @@
               <!-- Topbar Navbar -->
               <ul class="navbar-nav ml-auto">
                 
+              <!-- Notif -->
+              <li class="nav-item dropdown no-arrow">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                  </a>
+
+                  <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown" style="min-width: 20rem;">
+                    <a class="dropdown-item" style="padding: .5rem;">
+                      <div class="row">
+                        <div class="col-2 col-lg-2 col-xs-2 p-2">
+                          <img id="gambar-icon" src="../assets/img/logo_bgc.png">
+                        </div>
+                        <div class="col-6 col-lg-6 col-xs-6 mb-2">
+                          <div class="row">
+                            <div class="col-12 col-lg-12 col-xs-12">
+                              <h6 class="m-0 font-weight-bold">My team #1</h6>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-lg-12 col-xs-12">
+                              <h6 class="m-0 font-weight-bold">Game Name</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4 col-lg-4 col-xs-4">
+                          <div class="row">
+                            <div class="col-6 col-lg-6 col-xs-6 pt-2">
+                                <i type="button" class="fa fa-check" aria-hidden="true" data-toggle="dropdown" id="drop2" aria-haspopup="true" aria-expanded="false"></i>
+                            </div>
+                            <div class="col-6 col-lg-6 col-xs-6 pt-2">
+                                <i type="button" class="fa fa-times" aria-hidden="true" data-toggle="dropdown" id="drop3" aria-haspopup="true" aria-expanded="false"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    <a class="dropdown-item" style="padding: .5rem;">
+                      <div class="row">
+                        <div class="col-2 col-lg-2 col-xs-2 p-2">
+                          <img id="gambar-icon" src="../assets/img/logo_bgc.png">
+                        </div>
+                        <div class="col-6 col-lg-6 col-xs-6 mb-2">
+                          <div class="row">
+                            <div class="col-12 col-lg-12 col-xs-12">
+                              <h6 class="m-0 font-weight-bold">My team #1</h6>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 col-lg-12 col-xs-12">
+                              <h6 class="m-0 font-weight-bold">Game Name</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4 col-lg-4 col-xs-4">
+                          <div class="row">
+                            <div class="col-6 col-lg-6 col-xs-6 pt-2">
+                                <i type="button" class="fa fa-check" aria-hidden="true" data-toggle="dropdown" id="drop2" aria-haspopup="true" aria-expanded="false"></i>
+                            </div>
+                            <div class="col-6 col-lg-6 col-xs-6 pt-2">
+                                <i type="button" class="fa fa-times" aria-hidden="true" data-toggle="dropdown" id="drop3" aria-haspopup="true" aria-expanded="false"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                  </div>
+                </li>
+                
                 <!-- Plus Team -->
                 <li class="nav-item dropdown no-arrow">
                   <a class="nav-link dropdown-toggle" href="#" role="button">
