@@ -61,15 +61,15 @@
                                                     <div class="row">
                                                         <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                                                             <!-- <button class="btn btn-warning buttons-4 active">Member</button> -->
-                                                            <a class="font-weight-bold btn-dark active" id="menu" type="button">Member</a>
+                                                            <a class="font-weight-bold btn btn-dark active" id="menu">Member</a>
                                                         </div>
                                                         <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                                                             <!-- <button class="btn btn-warning buttons-4">Schedule</button> -->
-                                                            <a class="font-weight-bold btn-dark main-dark" id="menu" type="button">Schedule</a>
+                                                            <a class="font-weight-bold btn" href="#" id="menu">Schedule</a>
                                                         </div>
                                                         <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                                                             <!-- <button class="btn btn-warning buttons-4">Statistic</button> -->
-                                                            <a class="font-weight-bold btn-dark main-dark" id="menu" type="button">Statistic</a>
+                                                            <a class="font-weight-bold btn" href="#" id="menu">Statistic</a>
                                                         </div>
                                                     </div>
                                                 </div>

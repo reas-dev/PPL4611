@@ -16,6 +16,7 @@ class CreateTeamSchedulesTable extends Migration
         Schema::create('team_schedules', function (Blueprint $table) {
             $table->id();
             $table->string('code')->unique();
+            $table->string('team_code');
             $table->string('member_code_1');
             $table->string('member_code_2');
             $table->string('status')->nullable();
@@ -23,6 +24,7 @@ class CreateTeamSchedulesTable extends Migration
             $table->timestamps();
             $table->softDeletes();
 
+            $table->foreign('team_code')->references('code')->on('teams');
             $table->foreign('member_code_1')->references('code')->on('team_memberships');
             $table->foreign('member_code_2')->references('code')->on('team_memberships');
         });
@@ -35,6 +37,7 @@ class CreateTeamSchedulesTable extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('team_schedules');
     }
 }
