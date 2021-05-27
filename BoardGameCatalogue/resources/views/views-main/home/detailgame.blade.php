@@ -24,8 +24,8 @@ Game Detail
           <div class="row">
             <div class="col-12 col-lg-4 col-xs-4 m-auto" id="icon">
               <div class="card shadow1 mb-2 m-auto" id="card2">
-                <img class="card-header" sytle="z-index: 1; position: relative;" id="card-header2" src="{{ asset('img/logo_bgc.png') }}">
-                <i class="fa fa-heart-o content bg-dark" sytle="z-index: 2;" aria-hidden="true" id="btn" type="button" onclick="change_icon()"></i>
+                <img class="card-header img-cropped" sytle="z-index: 1; position: relative;" id="card-header2" src="{{ asset('img/logo_bgc.png') }}">
+                <i onclick="myFunction(this)" class="fa fa-heart-o content" sytle="z-index: 2;" aria-hidden="true" id="btn" type="button"></i>
               </div>
             </div>
           </div>

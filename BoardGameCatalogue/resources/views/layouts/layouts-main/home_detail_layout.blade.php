@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <i class="fa fa-arrow-left text-white mx-3 my-3" aria-hidden="true"></i>
     <div class="container">
 
         <!-- Outer Row -->
@@ -31,49 +32,7 @@
                     <!-- Card Body -->
                     <div class="card-body" id="card-body">
 
-                        <!-- Topbar -->
-                        <nav class="navbar navbar-expand navbar-light bg-black topbar mb-4 static-top shadow">
 
-                            <!-- Topbar Navbar -->
-                            <ul class="navbar-nav mr-auto">
-
-                                <!-- Nav Item - Menu Information -->
-                                <div class="d-sm-flex align-items-center justify-content-between mb-2">
-                                    <h1 class="h4 mb-0 text-gray-800" id="home">Home</h1>
-                                </div>
-                            </ul>
-                            <!-- End of Topbar -->
-
-                            <!-- Topbar Navbar -->
-                            <ul class="navbar-nav ml-auto">
-
-                                <!-- Plus Team -->
-                                <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button">
-                                        <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-
-                                <!-- Batas -->
-                                <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="batas">
-                                        <span>|</span>
-                                    </a>
-                                </li>
-
-                                <!-- Nav Item - User Information -->
-                                <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button">
-                                        <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                                        <!-- <img class="img-profile rounded-circle" src="#"> -->
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </nav>
                         <!-- End of Topbar -->
                         @yield('content')
                     </div>
@@ -92,6 +51,29 @@
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+    <script>
+        function myFunction(x) {
+            if (x.classList.contains('fa-heart-o')) {
+                x.classList.remove('fa-heart-o');
+                x.classList.toggle('fa-heart');
+                const icon = x.getElementById("btn");
+                if (icon.style.color == "#FFF") {
+                    icon.style.color = "red";
+                } else {
+                    icon.style.color = "#FFF";
+                }
+            } else {
+                x.classList.remove('fa-heart');
+                x.classList.toggle('fa-heart-o');
+                const icon = x.getElementById("btn");
+                if (icon.style.color == "#FFF") {
+                    icon.style.color = "red";
+                } else {
+                    icon.style.color = "#FFF";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

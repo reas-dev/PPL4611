@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <i class="fa fa-arrow-left text-white mx-3 my-3" aria-hidden="true"></i>
     <div class="container">
         <!-- Outer Row -->
         <div class="row justify-content-md-center">
@@ -26,42 +27,7 @@
                 <div class="card o-hidden border-0 my-5">
                     <!-- Card Body -->
                     <div class="card-body" id="card-body">
-                        <!-- Topbar -->
-                        <nav class="navbar navbar-expand navbar-light bg-black topbar mb-4 static-top shadow">
-                            <!-- Topbar Navbar -->
-                            <ul class="navbar-nav mr-auto">
-                                <!-- Nav Item - Menu Information -->
-                                <div class="d-sm-flex align-items-center justify-content-between mb-2">
-                                    <h1 class="h4 mb-0 text-gray-800" id="home">Home</h1>
-                                </div>
-                            </ul>
-                            <!-- End of Topbar -->
-                            <!-- Topbar Navbar -->
-                            <ul class="navbar-nav ml-auto">
-                                <!-- Plus Team -->
-                                <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button">
-                                        <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <!-- Batas -->
-                                <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="batas">
-                                        <span>|</span>
-                                    </a>
-                                </li>
-                                <!-- Nav Item - User Information -->
-                                <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button">
-                                        <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                                        <!-- <img class="img-profile rounded-circle" src="#"> -->
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- End of Topbar -->
+
                         <!-- Begin Page Content -->
                         <div class="container-fluid">
                             <!-- Content Row -->
@@ -78,7 +44,7 @@
                                             <div class="row">
                                                 <div class="col-12 col-lg-4 col-xs-4 m-auto" id="icon">
                                                     <div class="card shadow1 mb-2 m-auto" id="card2">
-                                                        <img class="card-header" id="card-header2" src="{{ asset('img/logo_bgc.png') }}">
+                                                        <img class="card-header img-cropped" id="card-header2" src="{{ asset('img/logo_bgc.png') }}">
                                                     </div>
                                                 </div>
                                             </div>

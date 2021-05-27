@@ -39,7 +39,7 @@
                         <!--<i class="fa fa-arrow-left text-white" aria-hidden="true"></i>-->
                         <div class="col-12 col-lg-4 col-xs-4 m-auto" id="icon">
                           <div class="card shadow1 mb-2 m-auto" id="card2">
-                            <img class="card-header" id="card-header2" src="{{ asset('img/logo_bgc.png') }}">
+                            <img class="card-header img-cropped" id="card-header2" src="{{ asset('img/logo_bgc.png') }}">
                           </div>
                         </div>
                         <!-- <div class="col-3 col-lg-1 col-xs-1 m-auto">

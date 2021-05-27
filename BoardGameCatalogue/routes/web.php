@@ -41,7 +41,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'admin'], 'prefix' =>
     Route::get('/', HomeComponent::class);
 });
 
-Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 'admin'], function(){
+Route::group(['middleware' => ['auth:sanctum', 'verified', 'admin'], 'prefix' => 'admin'], function () {
     Route::get('/', HomeComponent::class)->name('admin');
 
     Route::group(['prefix' => 'games'], function () {
@@ -51,15 +51,15 @@ Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 
     });
 });
 
-Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
-    Route::group(['prefix' => 'teams'], function(){
+Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
+    Route::group(['prefix' => 'teams'], function () {
         Route::get('/', TeamListComponent::class)->name('teams');
         Route::get('/create', TeamAddComponent::class)->name('teams.add');
         Route::get('/{code}', TeamHomeMemberComponent::class)->name('teams.show');
         Route::get('/{code}/create-member', TeamAddMemberComponent::class)->name('teams.add-member');
         Route::get('/{code}/create-schedule', TeamAddscheduleComponent::class)->name('teams.add-schedule');
     });
-    Route::group(['prefix' => 'games'], function(){
+    Route::group(['prefix' => 'games'], function () {
         Route::get('/', UserGameListComponent::class)->name('games');
     });
 });
