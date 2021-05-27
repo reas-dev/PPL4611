@@ -6,6 +6,9 @@
     --main-orange: #fd4801;
 }
 
+.main-dark {
+    background-color: var(--main-dark);
+}
 .main-gray {
     background-color: var(--main-gray);
 }
@@ -239,6 +242,33 @@ button:not(:disabled) {
     margin: 1rem;
 }
 
+#btn {
+    background-color: transparent;
+}
+
+.fa-heart {
+    color: #FC0000;
+}
+
+#drop2 {
+    color: rgb(25, 255, 140);
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto;
+}
+
+#drop3 {
+    color: rgb(255, 96, 96);
+    background-color: transparent;
+    border-color: transparent;
+    margin: auto;
+}
+
+.dropdown-menu {
+    color: #fff;
+    background-color: var(--main-dark);
+}
+
 /* input#email {
     background-image: url(fa-eye-slash); 
     background-repeat: no-repeat; 
@@ -255,4 +285,13 @@ button:not(:disabled) {
     color: #000;
     text-decoration: none;
     background-color: #dbdbdb;
+}
+
+.img-cropped {
+    object-fit: cover;
+    object-position: center center;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
 }
