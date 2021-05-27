@@ -37,7 +37,7 @@ class GameAddComponent extends Component
             'description' => $this->description,
         ]);
 
-        return redirect('/');
+        return redirect()->route('admin.games');
     }
 
     public function render()

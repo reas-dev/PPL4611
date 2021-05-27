@@ -9,13 +9,14 @@
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sb-admin-2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    @livewireStyles
 </head>
 
 <body>
@@ -49,7 +50,7 @@
 
                                 <!-- Plus Team -->
                                 <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button">
+                                    <a class="nav-link dropdown-toggle" href="{{ route('teams.add') }}" role="button">
                                         <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
                                     </a>
@@ -64,7 +65,7 @@
 
                                 <!-- Nav Item - User Information -->
                                 <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button">
+                                    <a class="nav-link dropdown-toggle" href="{{ url('/user/profile') }}" role="button">
                                         <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                                         <!-- <img class="img-profile rounded-circle" src="#"> -->
@@ -110,7 +111,10 @@
                                     </div>
                                 </div>
                             </div>
-                            @yield('content')
+                            <!-- Page Content -->
+                            <main>
+                                {{ $slot }}
+                            </main>
                         </div>
                         <!-- /.container-fluid -->
 
@@ -124,12 +128,15 @@
 
     </div>
 
+    @stack('modals')
 
+    @livewireScripts
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+    @stack('scripts')
 </body>
 
 </html>

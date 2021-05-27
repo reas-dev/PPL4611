@@ -47,7 +47,7 @@ class TeamAddComponent extends Component
             'status' => 'CAP'
         ]);
 
-        return redirect('/');
+        return redirect()->route('teams');
     }
 
     public function render()

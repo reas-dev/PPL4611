@@ -75,7 +75,7 @@
                                         </tr>
                                     @endforeach
                                 @else
-                                    <tr><td align='center' colspan='4'>Data Tidak Ada</td></tr>
+                                    <tr><td align='center' colspan='6'>Data Tidak Ada</td></tr>
                                 @endif
                                 </tbody>
                             </table>

@@ -31,6 +31,7 @@ class CreatePersonalAccessTokensTable extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('personal_access_tokens');
     }
 }

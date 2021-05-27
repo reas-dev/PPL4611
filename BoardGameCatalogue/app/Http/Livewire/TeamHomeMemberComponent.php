@@ -4,14 +4,17 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Team;
+use App\Models\TeamSchedule;
 
-class TeamHomeComponent extends Component
+class TeamHomeMemberComponent extends Component
 {
     public $code;
     public $game_code;
     public $name;
     public $icon;
     public $team;
+
+
 
     public function mount($code)
     {
@@ -21,12 +24,10 @@ class TeamHomeComponent extends Component
         $this->name = $team->name;
         $this->icon = $team->icon;
         $this->team = $team;
-        dump($team->members);
-        dump($team);
     }
 
     public function render()
     {
-        return view('livewire.team-home-component', ['team' => $this->team])->layout('layouts.live-guest');
+        return view('livewire.team-home-member-component', ['team' => $this->team])->layout('layouts.team-detail');
     }
 }

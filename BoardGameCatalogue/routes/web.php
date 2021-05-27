@@ -10,7 +10,7 @@ use App\Http\Livewire\GameEditComponent;
 
 //User Component
 use App\Http\Livewire\TeamListComponent;
-use App\Http\Livewire\TeamHomeComponent;
+use App\Http\Livewire\TeamHomeMemberComponent;
 use App\Http\Livewire\TeamAddComponent;
 use App\Http\Livewire\TeamAddMemberComponent;
 use App\Http\Livewire\TeamAddScheduleComponent;
@@ -39,7 +39,8 @@ Route::get('/logout', function () {
 
 Route::group(['middleware' => ['auth:sanctum', 'verified', 'admin'], 'prefix' => 'admin'], function () {
     Route::get('/', HomeComponent::class);
-=======
+});
+
 Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 'admin'], function(){
     Route::get('/', HomeComponent::class)->name('admin');
 
@@ -53,10 +54,10 @@ Route::group(['middleware' => ['auth:sanctum', 'verified','admin'], 'prefix' => 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
     Route::group(['prefix' => 'teams'], function(){
         Route::get('/', TeamListComponent::class)->name('teams');
-        Route::get('/{code}', TeamHomeComponent::class)->name('teams.show');
+        Route::get('/create', TeamAddComponent::class)->name('teams.add');
+        Route::get('/{code}', TeamHomeMemberComponent::class)->name('teams.show');
         Route::get('/{code}/create-member', TeamAddMemberComponent::class)->name('teams.add-member');
         Route::get('/{code}/create-schedule', TeamAddscheduleComponent::class)->name('teams.add-schedule');
-        Route::get('/create', TeamAddComponent::class)->name('teams.add');
     });
     Route::group(['prefix' => 'games'], function(){
         Route::get('/', UserGameListComponent::class)->name('games');
@@ -82,18 +83,21 @@ Route::get('/welcome/forgot-password', function () {
     return view('views-main/welcome/forgot');
 });
 
-Route::get('/user/home-page', function () {
-    return view('views-main/user/home-page');
-});
-Route::get('/user/my-team', function () {
+// Route::get('/user/home-page', function () {
+//     return view('views-main/user/home-page');
+// });
+
+//User Profile
+Route::get('/user-test/my-team', function () {
     return view('views-main/user/myteam');
 });
-Route::get('/user/profile', function () {
+Route::get('/user-test/profile', function () {
     return view('views-main/user/profile');
 });
-Route::get('/user/statistic', function () {
+Route::get('/user-test/statistic', function () {
     return view('views-main/user/statistic');
 });
+
 
 Route::get('/team/add-member', function () {
     return view('views-main/team/addmember');

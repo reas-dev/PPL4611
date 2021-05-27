@@ -58,6 +58,7 @@ class TeamAddScheduleComponent extends Component
                 $codeTM = Str::random(30);
                 TeamSchedule::create([
                     'code' => $codeTM,
+                    'team_code' => $this->code,
                     'member_code_1' => $check_username_1_in_teams->code,
                     'member_code_2' => $check_username_2_in_teams->code,
                     'fight_at' => $datetime_fight,

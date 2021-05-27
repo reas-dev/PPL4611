@@ -13,11 +13,6 @@ class TeamListComponent extends Component
     {
         $username = Auth::user()->username;
         $team_list = TeamMembership::where('user_username', $username)->get();
-        foreach ($team_list as $team) {
-            $team_name = $team->team->name;
-            dump($team_name);
-        }
-        dd($team_list);
-        return view('livewire.team-list-component')->layout('layouts.live-guest');
+        return view('livewire.team-list-component', ['team_list' => $team_list])->layout('layouts.home-team');
     }
 }
