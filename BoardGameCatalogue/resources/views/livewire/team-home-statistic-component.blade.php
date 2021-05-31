@@ -47,7 +47,7 @@
                                 <div class="row">
                                     <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                                         <!-- <button class="btn btn-warning buttons-4 active">Member</button> -->
-                                        <a class="font-weight-bold btn btn-dark active" id="menu">Member</a>
+                                        <a class="font-weight-bold btn" href="{{ route('teams.show', ['code' => $team->code]) }}" id="menu">Member</a>
                                     </div>
                                     <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                                         <!-- <button class="btn btn-warning buttons-4">Schedule</button> -->
@@ -55,58 +55,54 @@
                                     </div>
                                     <div class="col-12 col-lg-4 col-xs-3 col-buttons text-center">
                                         <!-- <button class="btn btn-warning buttons-4">Statistic</button> -->
-                                        <a class="font-weight-bold btn" href="{{ route('teams.statistic', ['code' => $team->code]) }}" id="menu">Statistic</a>
+                                        <a class="font-weight-bold btn btn-dark active" id="menu">Statistic</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Page Content -->
-                            @if ($status == 'CAP')
-                                <div class="row" id="coloring">
-                                    <div class="col-12 col-lg-9 col-xs-9">
-                                        <p class="text-large">Add Member</p>
-                                    </div>
-                                    <div class="col-12 col-lg-3 col-xs-3">
-                                    <p class="text-small text-center">
-                                        <a href="{{ route('teams.add-member', ['code' => $team->code]) }}" class="fa fa-plus fa-3x text-decoration-none text-white"></a>
-                                    </p>
-                                    </div>
+                            <div class="row" id="coloring">
+                                <div class="col col-2">
+                                <p class="text-small">#</p>
                                 </div>
-                            @else
-                                <div class="row" id="coloring">
-                                    <div class="col-12 col-lg-9 col-xs-9">
-                                        <p class="text-large">Member List</p>
-                                    </div>
+                                <div class="col col-7">
+                                <p class="text-small">Username</p>
                                 </div>
-                            @endif
-
-                                @foreach ($team->members as $member)
-                                <div class="row mb-3">
-                                    <div class="col-2 col-lg-1 col-xs-1">
-                                        @if ($member->status == "CAP")
-                                        <i class="fa fa-cogs m-2 text-primary" id="icon2" aria-hidden="true"></i>
-                                        @elseif ($member->status == "MOD")
-                                        <i class="fa fa-user-circle m-2 text-success" id="icon2" aria-hidden="true"></i>
-                                        @else
-                                        <i class="fa fa-user-circle m-2" id="icon2" aria-hidden="true"></i>
-                                        @endif
-                                        <!-- <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png"> -->
-                                        <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
-                                    </div>
-                                    <div class="col-7 col-lg-8 col-xs-8 mb-2">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-12 col-xs-12">
-                                                <h6 class="m-0 font-weight-bold" id="coloring">{{ $member->user->name }}</h6>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 col-lg-12 col-xs-12">
-                                                <h6 class="m-0 font-weight-bold" id="coloring2">{{ $member->user->username }}</h6>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col-1">
+                                <p class="text-small">W</p>
                                 </div>
-                                @endforeach
+                                <div class="col-1">
+                                <p class="text-small">D</p>
+                                </div>
+                                <div class="col-1">
+                                <p class="text-small">L</p>
+                                </div>
                             </div>
+                            @php
+                                $i = 1;
+                            @endphp
+                            @foreach ($statistics->sortByDesc('score') as $statistic)
+                            <div class="row" id="coloring1">
+                                <div class="col col-2">
+                                <i class="text-small">{{ $i }}</i>
+                                </div>
+                                <div class="col col-7">
+                                <p class="text-small">{{ $statistic->username }}</p>
+                                </div>
+                                <div class="col-1">
+                                <p class="text-small">{{ $statistic->win }}</p>
+                                </div>
+                                <div class="col-1">
+                                <p class="text-small">{{ $statistic->draw }}</p>
+                                </div>
+                                <div class="col-1">
+                                <p class="text-small">{{ $statistic->lose }}</p>
+                                </div>
+                            </div>
+
+                            @php
+                                $i += 1;
+                            @endphp
+                            @endforeach
                         </div>
                     </div>
                 </div>

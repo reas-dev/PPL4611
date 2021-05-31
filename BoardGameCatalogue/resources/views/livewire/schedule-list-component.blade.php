@@ -104,7 +104,7 @@
 
             <div class="col-lg-12 mb-4">
 
-                <input class="form-control mr-sm-2" type="search" wire:model="search" placeholder="Search for my game" aria-label="Cari">
+                <input class="form-control mr-sm-2" type="search" wire:model="search" placeholder="Search for my team" aria-label="Cari">
 
             </div>
         </div>
@@ -112,51 +112,74 @@
         <div class="container col-lg-12 col-xs-12 container-buttons" id="coloring1">
             <div class="row">
                 <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
-                    <a class="font-weight-bold btn" href="{{ route('teams') }}" id="menu">My Teams</a>
+                    <a class="font-weight-bold btn btn-dark active" id="menu">My Teams</a>
                 </div>
                 <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
                     <!-- <button class="btn btn-warning buttons-4 active">Game List</button> -->
-                    <a class="font-weight-bold btn btn-dark active" id="menu">Game List</a>
+                    <a class="font-weight-bold btn" href="{{ route('games') }}" id="menu">Game List</a>
                 </div>
             </div>
             <div class="row" style="margin-top: 20px;">
                 <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
                     <!-- <button class="btn btn-secondary buttons-41">New Games</button> -->
-                    <a class="font-weight-bold btn rounded main-gray" id="menu">New Games</a>
+                    <a class="font-weight-bold btn" href="{{ route('teams') }}" id="menu">Team List</a>
                 </div>
                 <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
                     <!-- <button class="btn btn-secondary buttons-41 active">Most - Liked</button> -->
-                    <a class="font-weight-bold btn" href="{{ route('games.most-liked') }}" id="menu">Most-Liked</a>
+                    <a class="font-weight-bold btn rounded main-gray" id="menu">Schedule</a>
                 </div>
             </div>
         </div>
-
+        <!-- Page Content -->
 
         <!-- Content Row -->
         <div class="row">
 
             <div class="col-12 col-lg-12 col-xs-12 mb-4">
 
-                <!-- Approach -->
+            <!-- Approach -->
+            @foreach ($schedules->sortBy('fight_at') as $schedule)
+            @if ($schedule->status == null)
+            <div class="card shadow mb-4 dropdown">
+                <div class="card-header py-3" id="card-header">
                 <div class="row">
-                    @foreach ($games as $game)
-                    <div class="col-12 col-lg-4 col-xs-12 mb-2" id="icon1">
-                        <a href="{{ route('games.detail', ['code' => $game->code]) }}" class="text-decoration-none">
-                        <div class="card shadow1 mb-4 mr-auto ml-auto" id="card2" type="button">
-                                <img class="card-header" id="card-header2" src="{{ asset('storage/' . $game->image) }}">
-                                <div class="text-center m-2">
-                                <h6 class="m-0 font-weight-bold" id="coloring">{{ $game->name }}</h6>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="col-2 col-lg-1 col-xs-1">
+                    <img class="m-2" id="gambar-icon" src="{{ asset('img/logo_bgc.png') }}">
+                    <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
+                    </div>
+                    <div class="col-7 col-lg-8 col-xs-8 mb-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-xs-12">
+                        <h6 class="m-0 font-weight-bold" id="coloring">{{ $schedule->username_1->user_username }} VS {{ $schedule->username_2->user_username }}</h6>
                         </div>
-                    @endforeach
-
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-xs-12">
+                        <h6 class="m-0 font-weight-bold" id="coloring">{{ $schedule->team->name }}</h6>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xs-3 text-right">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-xs-12">
+                        <h6 class="m-0 font-weight-bold" id="coloring">{{ Carbon\Carbon::parse($schedule->fight_at)->format('d M Y') }}</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-xs-12">
+                        <h6 class="m-0 font-weight-bold" id="coloring2">{{ Carbon\Carbon::parse($schedule->fight_at)->format('H:i') }} WIB</h6>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+                </div>
+            </div>
+            @endif
+
+            @endforeach
 
             </div>
         </div>
-
 
     </div>
     <!-- /.container-fluid -->

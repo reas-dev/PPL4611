@@ -9,7 +9,7 @@ use App\Models\TeamInvitation;
 use App\Models\Game;
 use Auth;
 
-class UserGameListComponent extends Component
+class GameListComponent extends Component
 {
     public $search;
 
@@ -37,13 +37,17 @@ class UserGameListComponent extends Component
         $invitations = TeamInvitation::where('user_username', $username)->get();
         if ($this->search)
         {
-            $games = Game::where('name', 'like', '%'.$this->search.'%')->get();
+            $games = Game::where('name', 'like', '%'.$this->search.'%')->get()->sortByDesc(function($game, $key){
+                return $game->likes->count();
+            });
         }
         else
         {
-            $games = Game::all();
+            $games = Game::all()->sortByDesc(function($game, $key){
+                return $game->likes->count();
+            });
         }
 
-        return view('livewire.user-game-list-component', ['games' => $games, 'invitations' => $invitations])->layout('layouts.home-team');
+        return view('livewire.game-list-component', ['games' => $games, 'invitations' => $invitations])->layout('layouts.home-team');
     }
 }

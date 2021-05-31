@@ -10,12 +10,20 @@ use App\Http\Livewire\GameEditComponent;
 
 //User Component
 use App\Http\Livewire\TeamListComponent;
+use App\Http\Livewire\ScheduleListComponent;
+
 use App\Http\Livewire\TeamHomeMemberComponent;
+use App\Http\Livewire\TeamHomeScheduleComponent;
+use App\Http\Livewire\TeamHomeStatisticComponent;
 use App\Http\Livewire\TeamAddComponent;
 use App\Http\Livewire\TeamAddMemberComponent;
 use App\Http\Livewire\TeamAddScheduleComponent;
+use App\Http\Livewire\TeamAddScoreComponent;
+
 
 use App\Http\Livewire\UserGameListComponent;
+use App\Http\Livewire\GameListComponent;
+use App\Http\Livewire\GameDetailComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,13 +62,19 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'admin'], 'prefix' =>
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::group(['prefix' => 'teams'], function () {
         Route::get('/', TeamListComponent::class)->name('teams');
+        Route::get('/schedule', ScheduleListComponent::class)->name('schedules');
         Route::get('/create', TeamAddComponent::class)->name('teams.add');
         Route::get('/{code}', TeamHomeMemberComponent::class)->name('teams.show');
+        Route::get('/{code}/schedule', TeamHomeScheduleComponent::class)->name('teams.schedule');
+        Route::get('/{code}/statistic', TeamHomeStatisticComponent::class)->name('teams.statistic');
         Route::get('/{code}/create-member', TeamAddMemberComponent::class)->name('teams.add-member');
         Route::get('/{code}/create-schedule', TeamAddscheduleComponent::class)->name('teams.add-schedule');
+        Route::get('/{code}/scoring', TeamAddScoreComponent::class)->name('teams.add-score');
     });
     Route::group(['prefix' => 'games'], function () {
         Route::get('/', UserGameListComponent::class)->name('games');
+        Route::get('/most-liked', GameListComponent::class)->name('games.most-liked');
+        Route::get('/{code}/detail', GameDetailComponent::class)->name('games.detail');
     });
 });
 Route::get('/home', HomeComponent::class);
