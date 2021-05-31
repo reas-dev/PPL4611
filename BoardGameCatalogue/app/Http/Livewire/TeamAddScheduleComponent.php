@@ -21,11 +21,17 @@ class TeamAddScheduleComponent extends Component
     public $date;
     public $time;
     public $code;
+    public $status;
 
     public function mount($code)
     {
+        $status = TeamMembership::where('team_code', $this->code)->where('user_username', Auth::user()->username)->firstOrFail()->status;
+        if($status != 'CAP') {
+            redirect('/teams/'.$this->code);
+        }
         // $team = Team::where('code', $code)->firstOrFail();
         $this->code = $code;
+        $this->status = $status;
     }
 
     public function store(){

@@ -122,11 +122,11 @@
             <div class="row" style="margin-top: 20px;">
                 <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
                     <!-- <button class="btn btn-secondary buttons-41">New Games</button> -->
-                    <a class="font-weight-bold btn rounded main-gray" id="menu">New Games</a>
+                    <a class="font-weight-bold btn" href="{{ route('games') }}" id="menu">New Games</a>
                 </div>
                 <div class="col-12 col-lg-3 col-xs-3 col-buttons text-center">
                     <!-- <button class="btn btn-secondary buttons-41 active">Most - Liked</button> -->
-                    <a class="font-weight-bold btn" href="{{ route('games.most-liked') }}" id="menu">Most-Liked</a>
+                    <a class="font-weight-bold btn rounded main-gray" id="menu">Most-Liked</a>
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@
                     <div class="card-body" id="card-body">
                         <!-- Topbar -->
                         <nav class="navbar navbar-expand navbar-light bg-black topbar mb-4 static-top shadow">
-                            <a href="{{ route('teams') }}"><i class="fa fa-arrow-left text-white mx-3 my-3" aria-hidden="true"></i></a>
+                            <a href="{{ route('games') }}"><i class="fa fa-arrow-left text-white mx-3 my-3" aria-hidden="true"></i></a>
                             {{-- <!-- Topbar Navbar -->
                             <ul class="navbar-nav mr-auto">
                                 <!-- Nav Item - Menu Information -->

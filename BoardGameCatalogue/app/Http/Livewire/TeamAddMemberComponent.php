@@ -16,17 +16,27 @@ class TeamAddMemberComponent extends Component
 {
     public $username;
     public $code;
+    public $status;
 
     public function mount($code)
     {
+        $status = TeamMembership::where('team_code', $this->code)->where('user_username', Auth::user()->username)->firstOrFail()->status;
+        if($status != 'CAP') {
+            redirect('/teams/'.$this->code);
+        }
         // $team = Team::where('code', $code)->firstOrFail();
         $this->code = $code;
+        $this->status = $status;
     }
 
     public function store(){
         $this->validate([
             'username' => ['required', 'exists:App\Models\User,username', 'alpha_num', 'string', 'min:6', 'max:16'],
         ]);
+
+        if($this->status != 'CAP') {
+            redirect('/teams/'.$this->code);
+        }
 
         $tes1 = TeamInvitation::where('team_code', $this->code)->where('user_username', $this->username)->get()->isEmpty();
         $tes2 = TeamMembership::where('team_code', $this->code)->where('user_username', $this->username)->get()->isEmpty();
@@ -39,12 +49,12 @@ class TeamAddMemberComponent extends Component
                 'team_code' => $this->code,
                 'user_username' => $this->username,
             ]);
-            TeamMembership::create([
-                'code' => $codeTM,
-                'team_code' => $this->code,
-                'user_username' => $this->username,
-                'status' => 'MBR',
-            ]);
+            // TeamMembership::create([
+            //     'code' => $codeTM,
+            //     'team_code' => $this->code,
+            //     'user_username' => $this->username,
+            //     'status' => 'MBR',
+            // ]);
 
             return redirect('/teams/'.$this->code);
         }

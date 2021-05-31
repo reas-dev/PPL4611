@@ -13,8 +13,8 @@ class Game extends Model
 
     protected $guarded = [];
 
-    // public function likes()
-    // {
-    //     return $this->hasMany(GameLike::class, 'game_code', 'code');
-    // }
+    public function likes()
+    {
+        return $this->hasMany(GameLike::class, 'game_code', 'code');
+    }
 }
