@@ -69,7 +69,7 @@
                             <div class="col-3 col-lg-3 col-xs-3 text-center">
                                 <!-- <img class="m-2" id="gambar-icon" src="../assets/img/logo_bgc.png"> -->
                                 <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
-                                <i class="fa fa-cogs m-2" id="icon2" aria-hidden="true"></i>
+                                <i class="fa fa-gitlab m-2" id="icon2" aria-hidden="true"></i>
                             </div>
                         @endif
                     </div>

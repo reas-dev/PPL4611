@@ -60,12 +60,12 @@
                 </div>
             </li>
 
-            <!-- Batas -->
+            {{-- <!-- Batas -->
             <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="batas">
                     <span>|</span>
                 </a>
-            </li>
+            </li> --}}
 
             <!-- Plus Team -->
             <li class="nav-item dropdown no-arrow">
@@ -164,7 +164,7 @@
                             <div class="col-3 col-lg-2 col-xs-2">
                             <div class="m-2" id="icon">
                                 @if ($team->status == 'CAP')
-                                <i class="fa fa-cogs"></i>
+                                <i class="fa fa-gitlab"></i>
                                 @endif
                                 <!-- Gambar mahkota berbayar, ini cma ganti smntara -->
                                 <!-- ini nanti dropdown mahkotanya -->

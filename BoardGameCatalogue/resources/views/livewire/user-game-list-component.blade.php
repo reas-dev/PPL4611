@@ -60,12 +60,12 @@
                 </div>
             </li>
 
-            <!-- Batas -->
+            {{-- <!-- Batas -->
             <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="batas">
                     <span>|</span>
                 </a>
-            </li>
+            </li> --}}
 
             <!-- Plus Team -->
             <li class="nav-item dropdown no-arrow">
