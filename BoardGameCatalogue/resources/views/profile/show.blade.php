@@ -1,8 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        {{-- <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Profile') }}
-        </h2>
+        </h2> --}}
+        <x-jet-button style="background-color: rgb(83, 83, 83); color: white;" class="font-semibold text-xl text-gray-800 leading-tight">
+            <a href="{{ route('profile') }}" class="btn btn-dark text-warning buttons-4 text-decoration-none">{{ __('Kembali') }}</a>
+        </x-jet-button>
     </x-slot>
 
     <div>

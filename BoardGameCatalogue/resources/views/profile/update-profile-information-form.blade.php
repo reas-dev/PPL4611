@@ -54,28 +54,28 @@
 
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="name" value="{{ __('Name') }}" />
+            <x-jet-label for="name" value="{{ __('Name') }}" style="color: black !important"/>
             <x-jet-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
             <x-jet-input-error for="name" class="mt-2" />
         </div>
 
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="email" value="{{ __('Email') }}" />
+            <x-jet-label for="email" value="{{ __('Email') }}" style="color: black !important"/>
             <x-jet-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" />
             <x-jet-input-error for="email" class="mt-2" />
         </div>
 
         <!-- Phone -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="phone" value="{{ __('Phone') }}" />
+            <x-jet-label for="phone" value="{{ __('Phone') }}" style="color: black !important"/>
             <x-jet-input id="phone" type="text" class="mt-1 block w-full" wire:model.defer="state.phone" autocomplete="phone" />
             <x-jet-input-error for="phone" class="mt-2" />
         </div>
 
         <!-- Address -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="address" value="{{ __('Address') }}" />
+            <x-jet-label for="address" value="{{ __('Address') }}" style="color: black !important"/>
             <x-input.textarea id="address" type="text" class="mt-1 block w-full" wire:model.defer="state.address" autocomplete="address" />
             <x-jet-input-error for="address" class="mt-2" />
         </div>
@@ -86,7 +86,7 @@
             {{ __('Saved.') }}
         </x-jet-action-message>
 
-        <x-jet-button wire:loading.attr="disabled" wire:target="photo">
+        <x-jet-button wire:loading.attr="disabled" wire:target="photo" style="background-color: black;">
             {{ __('Save') }}
         </x-jet-button>
     </x-slot>
