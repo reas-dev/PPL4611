@@ -25,6 +25,11 @@ use App\Http\Livewire\UserGameListComponent;
 use App\Http\Livewire\GameListComponent;
 use App\Http\Livewire\GameDetailComponent;
 
+use App\Http\Livewire\ProfileHomeComponent;
+use App\Http\Livewire\ProfileEditComponent;
+use App\Http\Livewire\ProfileTeamComponent;
+use App\Http\Livewire\ProfileStatisticComponent;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,7 +42,7 @@ use App\Http\Livewire\GameDetailComponent;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 Route::get('/logout', function () {
@@ -75,6 +80,12 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         Route::get('/', UserGameListComponent::class)->name('games');
         Route::get('/most-liked', GameListComponent::class)->name('games.most-liked');
         Route::get('/{code}/detail', GameDetailComponent::class)->name('games.detail');
+    });
+    Route::group(['prefix' => 'profile'], function () {
+        Route::get('/', ProfileHomeComponent::class)->name('profile');
+        // Route::get('/user/profile', ProfileEditComponent::class)->name('profile.edit');
+        Route::get('/my-teams', ProfileTeamComponent::class)->name('profile.my-teams');
+        Route::get('/my-statistics', ProfileStatisticComponent::class)->name('profile.my-statistics');
     });
 });
 Route::get('/home', HomeComponent::class);

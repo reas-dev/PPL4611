@@ -84,7 +84,7 @@
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
-                <a class="nav-link dropdown-toggle" href="{{ url('/user/profile') }}" role="button">
+                <a class="nav-link dropdown-toggle" href="{{ url('/profile') }}" role="button">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                     <i class="fa fa-user-circle" aria-hidden="true"></i>
                     <!-- <img class="img-profile rounded-circle" src="#"> -->
