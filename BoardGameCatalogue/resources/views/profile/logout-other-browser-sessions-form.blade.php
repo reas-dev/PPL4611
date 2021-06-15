@@ -8,7 +8,7 @@
     </x-slot>
 
     <x-slot name="content">
-        <div class="max-w-xl text-sm text-gray-600">
+        <div class="max-w-xl text-sm text-gray-600" style="color: white">
             {{ __('If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.') }}
         </div>
 
@@ -30,12 +30,12 @@
                         </div>
 
                         <div class="ml-3">
-                            <div class="text-sm text-gray-600">
+                            <div class="text-sm text-gray-600" style="color: white">
                                 {{ $session->agent->platform() }} - {{ $session->agent->browser() }}
                             </div>
 
                             <div>
-                                <div class="text-xs text-gray-500">
+                                <div class="text-xs text-gray-500" style="color: white">
                                     {{ $session->ip_address }},
 
                                     @if ($session->is_current_device)
@@ -52,7 +52,7 @@
         @endif
 
         <div class="flex items-center mt-5">
-            <x-jet-button wire:click="confirmLogout" wire:loading.attr="disabled" style="background-color: black !important;">
+            <x-jet-button wire:click="confirmLogout" wire:loading.attr="disabled" style="background-color: rgb(83, 83, 83) !important;">
                 {{ __('Log Out Other Browser Sessions') }}
             </x-jet-button>
 
@@ -62,7 +62,7 @@
         </div>
 
         <!-- Log Out Other Devices Confirmation Modal -->
-        <x-jet-dialog-modal wire:model="confirmingLogout" style="background-color: black !important;">
+        <x-jet-dialog-modal wire:model="confirmingLogout" style="background-color: rgb(83, 83, 83) !important;">
             <x-slot name="title">
                 {{ __('Log Out Other Browser Sessions') }}
             </x-slot>
@@ -88,7 +88,7 @@
 
                 <x-jet-button class="ml-2"
                             wire:click="logoutOtherBrowserSessions"
-                            wire:loading.attr="disabled" style="background-color: black !important;">
+                            wire:loading.attr="disabled" style="background-color: rgb(83, 83, 83) !important;">
                     {{ __('Log Out Other Browser Sessions') }}
                 </x-jet-button>
             </x-slot>
