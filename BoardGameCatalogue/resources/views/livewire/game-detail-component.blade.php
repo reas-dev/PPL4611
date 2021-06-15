@@ -23,7 +23,7 @@
                     @if ($liked == null)
                         <i class="fa fa-heart-o content" style="z-index: 2;" aria-hidden="true" id="btn" type="button" wire:click="like()"></i>
                     @else
-                        <i class="fa fa-heart-o content text-danger" style="z-index: 2;" aria-hidden="true" id="btn" type="button" wire:click="unlike()"></i>
+                        <i class="fa fa-heart content text-danger" style="z-index: 2;" aria-hidden="true" id="btn" type="button" wire:click="unlike()"></i>
                     @endif
 
                 </div>

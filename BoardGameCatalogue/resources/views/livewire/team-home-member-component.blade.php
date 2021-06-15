@@ -83,7 +83,7 @@
                                 <div class="row mb-3">
                                     <div class="col-2 col-lg-1 col-xs-1">
                                         @if ($member->status == "CAP")
-                                        <i class="fa fa-cogs m-2 text-primary" id="icon2" aria-hidden="true"></i>
+                                        <i class="fa fa-gitlab m-2 text-primary" id="icon2" aria-hidden="true"></i>
                                         @elseif ($member->status == "MOD")
                                         <i class="fa fa-user-circle m-2 text-success" id="icon2" aria-hidden="true"></i>
                                         @else
