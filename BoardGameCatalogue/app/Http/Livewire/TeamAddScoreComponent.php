@@ -38,11 +38,14 @@ class TeamAddScoreComponent extends Component
             'winner' => ['required'],
         ]);
 
+        $schedule = TeamSchedule::where('code', $this->code)->firstOrFail();
+        $status = TeamMembership::where('team_code', $schedule->team_code)->where('user_username', Auth::user()->username)->firstOrFail();
+
         $this->schedule->status = $this->winner;
         $this->schedule->save();
 
         ScoringLog::create([
-            'scorer_code' => Auth::user()->username,
+            'scorer_code' => $status->code,
             'schedule_code' => $this->schedule->code,
             'score' => $this->winner,
         ]);
