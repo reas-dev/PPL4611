@@ -29,8 +29,8 @@ class GameEditComponent extends Component
     public function update()
     {
         $this->validate([
-            'name' => ['required','string', 'min:4', 'max:255'],
-            'description' => ['required', 'min:4', 'max:255'],
+            'name' => ['required','string', 'min:1', 'max:255'],
+            'description' => ['required', 'min:4'],
         ]);
         $game = Game::where('code', $this->code)->first();
         $game->name = $this->name;

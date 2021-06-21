@@ -51,11 +51,7 @@ Route::get('/logout', function () {
 });
 
 Route::group(['middleware' => ['auth:sanctum', 'verified', 'admin'], 'prefix' => 'admin'], function () {
-    Route::get('/', HomeComponent::class);
-});
-
-Route::group(['middleware' => ['auth:sanctum', 'verified', 'admin'], 'prefix' => 'admin'], function () {
-    Route::get('/', HomeComponent::class)->name('admin');
+    Route::get('/', GameHomeComponent::class)->name('admin');
 
     Route::group(['prefix' => 'games'], function () {
         Route::get('/', GameHomeComponent::class)->name('admin.games');

@@ -20,9 +20,9 @@ class GameAddComponent extends Component
 
     public function store(){
         $this->validate([
-            'name' => ['required','string', 'min:4', 'max:255'],
+            'name' => ['required','string', 'min:1', 'max:255'],
             'image' => ['required', 'mimes:jpg,jpeg,png', 'max:1024'],
-            'description' => ['required', 'min:4', 'max:255'],
+            'description' => ['required', 'min:4'],
         ]);
 
         $code = Str::random(20);
