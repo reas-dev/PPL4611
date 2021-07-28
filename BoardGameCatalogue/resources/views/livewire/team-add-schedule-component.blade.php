@@ -1,6 +1,6 @@
 <div>
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-black-1">
-        <div class="text-white text-2xl mb-6">Add chedule</div>
+        <div class="text-white text-2xl mb-6">Add Schedule</div>
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-black-1 overflow-hidden sm:rounded-lg">
             @if ($errors->any())
             <div class="mb-4">

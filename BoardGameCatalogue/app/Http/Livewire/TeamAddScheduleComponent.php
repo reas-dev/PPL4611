@@ -29,7 +29,6 @@ class TeamAddScheduleComponent extends Component
         if($status != 'CAP') {
             redirect('/teams/'.$this->code);
         }
-        // $team = Team::where('code', $code)->firstOrFail();
         $this->code = $code;
         $this->status = $status;
     }
